@@ -15,6 +15,24 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+document.querySelectorAll('.bento-box').forEach(box => {
+    box.addEventListener('click', function() {
+        const videoSrc = this.getAttribute('data-video');
+        const modal = document.getElementById('modal');
+        const modalVideo = document.getElementById('modal-video');
 
+        modal.style.display = "block";
+        modalVideo.src = videoSrc;
+        modalVideo.play();
+    });
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+    const modal = document.getElementById('modal');
+    const modalVideo = document.getElementById('modal-video');
+
+    modal.style.display = "none";
+    modalVideo.pause();
+});
 
 

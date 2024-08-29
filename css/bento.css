@@ -1,0 +1,134 @@
+.bento {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh; /* Aumentar la altura máxima */
+    width: 70vw;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    position: relative;
+    margin: 40px auto; /* Agregar margen superior y centrar horizontalmente */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.section-title {
+    font-size: 3em;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+.bento .frame, .bento .frame-3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.bento .frame-3 {
+    height: 250px; /* Aumentar la altura */
+}
+
+.bento .frame-2, .bento .frame-4 {
+    background-color: #e9e9e9;
+    border-radius: 16px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 250px; /* Aumentar la altura */
+}
+
+.bento-box {
+    position: relative;
+    overflow: hidden;
+    background-color: #e9e9e9;
+    border-radius: 16px;
+    flex-grow: 1;
+    height: 250px; /* Aumentar la altura */
+}
+
+.bento-box .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 35, 38, 0.8);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0); /* Filtro visible por defecto */
+}
+
+.bento-box .icon-tech img {
+    width: 20px;
+    margin: 3px;
+}
+
+.bento-box .title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.bento-box:hover .filter {
+    transform: translateY(-100%); /* Filtro desaparece al hacer hover */
+}
+
+.bento-box video, .bento-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video se vea completo */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.bento-box:hover video, .bento-box:hover img {
+    transform: scale(1.05); /* Efecto de zoom reducido */
+}
+
+/* Estilo del modal */
+#modal {
+    display: none; /* Modal oculto por defecto */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+#modal-video, #modal-img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}

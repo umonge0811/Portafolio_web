@@ -240,15 +240,9 @@ html {
 .sobremi .fila .col .container-intereses .interes i {
     margin-bottom: 8px; /* Añade espacio entre el icono y el texto */
 }
-sobremi .fila .col .container-intereses .interes span {
-    display: block;
-    font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
-}
 
-/* Ajuste específico para el icono de "Viajar" */
-.sobremi .fila .col .container-intereses .interes i.viajar-icon {
-    margin-bottom: 12px; /* Añade un poco más de espacio debajo del icono de "Viajar" */
-}
+
+
 .sobremi .fila .col .container-intereses .interes {
     flex: 1;
     min-width: 80px; /* Asegura que los íconos tengan un tamaño consistente */
@@ -327,16 +321,9 @@ sobremi .fila .col .container-intereses .interes span {
 }
 
 /* SECCION PORTFOLIO */
-.section-title {
-    font-size: 3em;
-    font-family: 'Righteous', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
 
-.section-bento {
+
+/* .section-bento {
     min-height: 100vh;
     padding: 5% 12%;
     display: flex;
@@ -345,7 +332,7 @@ sobremi .fila .col .container-intereses .interes span {
     align-items: center;
     color: #fff;
     padding-top: 10px; /* Asegura espacio suficiente para evitar superposición */
-}
+} */
 
 .glassmorphism {
     width: 100%;
@@ -357,7 +344,7 @@ sobremi .fila .col .container-intereses .interes span {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.bento-grid {
+/* .bento-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -441,7 +428,7 @@ sobremi .fila .col .container-intereses .interes span {
     height: auto; /* El cuadro de texto se ajustará según el espacio disponible */
     border: 1px solid #1CB698;
     padding: 5px;
-}
+} */
 
 /* Estilo del modal */
 #modal {
