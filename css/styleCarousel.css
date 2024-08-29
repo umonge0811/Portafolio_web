@@ -1,0 +1,115 @@
+
+
+@keyframes slide{
+    from{
+        transform: translateX(0)
+        ;
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide2{
+    from{
+        transform: translateX(-100%)
+        ;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+.logos{
+    overflow: hidden;
+    padding: 30px 0;
+    background: rgba(30,35,38,0.2);
+-webkit-backdrop-filter: blur(11px);
+backdrop-filter: blur(11px);
+    border: 1px solid rgba(30,35,38,0.175); 
+    white-space: nowrap;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #1cb698;
+    box-shadow: 3px 2px 5px #045c4a;
+
+}
+
+.logos2{
+    overflow: hidden;
+    padding: 30px 0;
+    background: rgba(30,35,38,0.2);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+    border: 1px solid rgba(30,35,38,0.175);    white-space: nowrap;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #1cb698;
+    box-shadow: 3px 2px 5px #045c4a;
+}
+
+.logos:before,
+.logos:after{
+    position:absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);    
+}
+
+.logos:after{
+    right:0;
+    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);    
+}
+
+
+
+.logos2:before,
+.logos2:after{
+    position:absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos2:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);    
+}
+
+.logos2:after{
+    right:0;
+    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);    
+}
+
+.logos2-slide {
+    display: inline-block;
+    animation: 30s slide2 infinite linear;
+}
+
+.logos2-slide img{
+    height: 50px;
+    margin: 0 40px;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 50px;
+    margin: 0 40px;
+}
+
+

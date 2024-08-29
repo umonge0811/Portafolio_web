@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleCarousel.css">
+    <script src="/modal.js"></script>
+
+</head>
+
+
+<body>
+    <!--MENU DEL ENCABEZADO-->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ulises M.A</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#inicio">SOBRE MI</a></li>
+                    <li><a href="#inicio">PORTFOLIO</a></li>
+                    <li><a href="#inicio">SKILLS</a></li> 
+                    <li><a href="#inicio">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+
+
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="content-banner">
+            <div class="container-img">
+                <img src="/assets/img/ulises3.png" alt="">
+            </div>
+            <h1>Ulises Monge Aguilar</h1>
+            <h2>Desarrollador de Software & Web</h2>
+            <h4>Estudiante de Ingeniería en Sistemas</h4>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+
+    <section id="sobremi" class="sobremi">
+
+        <div class="content-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Soy Ulises Monge</span> estudiante avanzado de Ingeniería en Sistemas con una sólida base en
+                el desarrollo de software y aplicaciones web. A través de la formación académica y proyectos personales,
+                he adquirido experiencia y práctica en tecnologías como C#, .NET, HTML, JavaScript, CSS, y Blazor entre otras.
+                Complementando los estudios universitarios con cursos adicionales, busco estar siempre al día con las
+                últimas herramientas y tendencias del sector. Aunque la experiencia laboral formal es limitada, la
+                dedicación al aprendizaje y la aplicación de conocimientos en proyectos reales han fortalecido la
+                capacidad para enfrentar desafíos tecnológicos con seguridad y determinación. Siempre en busca de
+                oportunidades para crecer y aportar en un entorno profesional.
+            </p>
+
+
+            <div class="fila">
+                <!--DATOS PERSONALES-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <div class="container-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-regular fa-map"></i>   
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <!--INTERESES-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="container-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-drum"></i>
+                            <span>BATERIA</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button>
+                Descargar CV
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <!--SKILSS-->
+    <section id="skills" class="skills">
+        <div class="content-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--SKILLS TECNICAS-->
+                <h4>Lenguajes de Progración</h4>
+                <div class="col">                    
+                    <div class="logos">                        
+                        <div class="logos-slide">
+                            <img src="/assets/svg/css.svg">
+                            <img src="/assets/svg/html5.svg">
+                            <img src="/assets/svg/javascript.svg">
+                            <img src="/assets/svg/csharp.svg">
+                            <img src="/assets/svg/sql-server.svg">
+                            <img src="/assets/svg/javascript.svg">
+                            <img src="/assets/svg/csharp.svg">
+                        </div>                                        
+                    </div>
+
+                    <script>
+                        var copy = document.querySelector(".logos-slide").cloneNode(true);
+                        document.querySelector(".logos").appendChild(copy);
+                    </script>
+                    
+                </div>
+                <div class="filas">
+                    <h4>Frameworks y otros</h4>
+                    <div class="col">                    
+                        <div class="logos2">                        
+                            <div class="logos2-slide">
+                                <img src="/assets/svg/bootstrap.svg">
+                                <img src="/assets/svg/figma.svg">
+                                <img src="/assets/svg/git.svg">
+                                <img src="/assets/svg/Github_dark.svg">
+                                <img src="/assets/svg/materialui.svg">
+                                <img src="/assets/svg/notion.svg">
+                                <img src="/assets/svg/tailwindcss.svg">
+                                <img src="/assets/svg/visual-studio.svg">
+                                <img src="/assets/svg/vscode.svg">    
+                            </div>                                        
+                        </div>
+    
+                        <script>
+                            var copy = document.querySelector(".logos2-slide").cloneNode(true);
+                            document.querySelector(".logos2").appendChild(copy);
+                        </script>
+                        
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+
+     <!-- SECCION PORTFOLIO -->
+ 
+     <section class="section-bento">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="glassmorphism">
+            <div class="bento-grid">
+                <!-- Primer row: Video / Foto / Video -->
+                <div class="box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
+                    <div class="inner-box">
+                        <video src="/assets/videos/Blazor_Prov_Video.mp4" autoplay muted loop></video>
+                        <div class="icon-tech">
+                            <img src="/assets/svg/css.svg" alt="css">
+                            <img src="/assets/svg/html5.svg" alt="html">
+                            <img src="/assets/svg/csharp.svg" alt="C#">
+                            <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
+                            <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box image-box">
+                    <div class="inner-box">
+                        <img src="/assets/img/github.png" alt="Proyecto Screenshot">
+                        <div class="icon-tech">
+                            <img src="/assets/svg/html5.svg" alt="HTML5">
+                            <img src="/assets/svg/css.svg" alt="CSS3">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box video-box" data-video="/assets/videos/Blazor_Bib_Video.mp4">
+                    <div class="inner-box">
+                        <video src="/assets/videos/Blazor_Bib_Video.mp4" autoplay muted loop></video>
+                        <div class="icon-tech">
+                            <img src="/assets/svg/css.svg" alt="css">
+                            <img src="/assets/svg/html5.svg" alt="html">
+                            <img src="/assets/svg/csharp.svg" alt="C#">
+                            <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
+                            <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Segundo row: Foto / Texto / Foto -->
+                <div class="box image-box">
+                    <div class="inner-box">
+                        <img src="/assets/img/figma.png" alt="Proyecto Screenshot">
+                        <div class="icon-tech">
+                            <img src="/assets/svg/javascript.svg" alt="JavaScript">
+                            <img src="/assets/svg/bootstrap.svg" alt="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box info-box">
+                    <div class="inner-box">
+                        <h3>Proyectos</h3>
+                        <p>Explora los proyectos desarrollados con diferentes tecnologías. Haz clic en un video para verlo en detalle.</p>
+                    </div>
+                </div>
+    
+                <div class="box image-box">
+                    <div class="inner-box">
+                        <img src="/assets/img/wpf_CSharp_AeroUACA2.png" alt="Proyecto Screenshot">
+                        <div class="icon-tech">
+                            <img src="/assets/svg/javascript.svg" alt="JavaScript">
+                            <img src="/assets/svg/bootstrap.svg" alt="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tercer row: Video / Foto / Video -->
+                <div class="box video-box" data-video="/assets/videos/HTML_VentaTiq.mp4">
+                    <div class="inner-box">
+                        <video src="/assets/videos/HTML_VentaTiq.mp4" autoplay muted loop></video>
+                        <div class="icon-tech">
+                            <img src="/assets/svg/css.svg" alt="css">
+                            <img src="/assets/svg/html5.svg" alt="html">
+                            <img src="/assets/svg/csharp.svg" alt="C#">
+                            <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
+                            <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box image-box">
+                    <div class="inner-box">
+                        <img src="/assets/img/wpf_CSharp_AeroUACA.png" alt="Proyecto Screenshot">
+                        <div class="icon-tech">
+                            <img src="/assets/svg/javascript.svg" alt="JavaScript">
+                            <img src="/assets/svg/bootstrap.svg" alt="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box video-box" data-video="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4">
+                    <div class="inner-box">
+                        <video src="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4" autoplay muted loop></video>
+                        <div class="icon-tech">
+                            <img src="/assets/svg/css.svg" alt="css">
+                            <img src="/assets/svg/html5.svg" alt="html">
+                            <img src="/assets/svg/csharp.svg" alt="C#">
+                            <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
+                            <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Modal Structure -->
+<div id="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <video id="modal-video" controls></video>
+        <img id="modal-img" alt="Imagen del Proyecto">
+    </div>
+</div>
+
+    
+    
+        
+                
+
+
+
+</body>
+
+</html>

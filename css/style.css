@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: linear-gradient(rgba(30, 35, 38, .9), rgba(30, 35, 38, .9)),
+        url(/assets/img/v627-aew-47-technologybackground.jpg);
+    background-size: cover;
+    
+}
+
+html {
+    /*me permite deslizar cuando hago click en los links del menu*/
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+
+.container-header {
+    background: rgba(30, 35, 38, 0.2);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.container-header header nav ul li a:hover {
+    color: #1cb698;
+
+}
+
+.nav-responsive {
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*SECCION DE INICIO*/
+
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(/assets/img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .content-banner {
+    padding: 20px;
+    background: rgba(37, 42, 46, 0.3);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid #1cb698;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .content-banner img {
+    padding: 20px;
+    margin-top: 40px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    border-radius: 20%;
+    mask-image: linear-gradient(black 50%, transparent);
+    filter: drop-shadow(0 0 8px rgba(23, 90, 99, 0.8));
+
+
+}
+
+.inicio .content-banner img:hover {
+    transform: scaleX(1.01)scaleY(1.01);
+
+}
+
+
+.inicio .content-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .content-banner h2 {
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+.inicio .content-banner h4 {
+    margin-top: 1px;
+    font-weight: lighter;
+}
+
+.inicio .content-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+
+.inicio .content-banner .redes a:hover {
+    background-color: #1cb698;
+    transform: scaleX(1.4)scaleY(1.4);
+}
+
+/*SOBRE MI*/
+
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0px 0.5px 10px 4px #045c4a;
+}
+
+.sobremi .content-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.sobremi .content-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .content-seccion p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila .col {
+    width: 50%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .container-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .container-intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .container-intereses .interes:hover {
+    background-color: #1CB698;
+}
+
+.sobremi .fila .col .container-intereses .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+
+/*SKILSS SECCION*/
+
+.skills {
+    
+    height: 50vh;
+    color: #fff;
+    margin-top: 0;
+    padding: 50px 20px;
+    
+
+}
+
+.skills .content-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.skills h4 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: lighter;
+    text-justify: center;
+
+}
+
+
+/*SECCION PORTAFOLIO*/
+
+/* SECCION PORTFOLIO */
+/*.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}*/
+
+/* Ajustes Generales */
+
+
+.section-title {
+    font-size: 3em;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+.section-bento {
+    min-height: 100vh;
+    padding: 5% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.glassmorphism {
+    width: 100%;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+    width: 100%;
+}
+
+.box {
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.inner-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Iconos de Tecnologías */
+.icon-tech {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 0.5em;
+}
+
+.icon-tech img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Info Box Styles */
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-box h3 {
+    font-size: 2em;
+    font-family: 'Righteous';
+    color: #1CB698;
+}
+
+.info-box p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* Estilo para ajustar las fotos del segundo row */
+.bento-grid .image-box:nth-child(4),
+.bento-grid .image-box:nth-child(6) {
+    height: 250px;
+    /* width: calc(100% - 50px); Hace las fotos más angostas */
+}
+
+.bento-grid .info-box {
+    height: auto; /* El cuadro de texto se ajustará según el espacio disponible */
+    border: 1px solid #1CB698;
+    padding: 5px;
+}
+
+/* Estilo del modal */
+#modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    margin: 5% auto; 
+    padding: 20px;
+    width: 80%; 
+    max-width: 1200px; /* Ajusta este valor según lo necesites */
+}
+
+/* Estilo para el video dentro del modal */
+#modal-video {
+    width: 100%; 
+    height: auto; 
+    max-height: 80vh; /* Para asegurarte de que no se salga de la ventana */
+    background-color: #000;
+}
+
+/* Estilo para la imagen dentro del modal */
+#modal-img {
+    width: 100%; 
+    height: auto; 
+    max-height: 80vh;
+}
+
+/* Estilo para el botón de cierre */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media Queries para Responsividad */
+
+/* Ajustes para tablets */
+@media screen and (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .info-box h3 {
+        font-size: 1.5em;
+    }
+
+    .info-box p {
+        font-size: 1em;
+    }
+}
+
+/* Ajustes para móviles */
+@media screen and (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .info-box {
+        padding: 10px;
+    }
+
+    .info-box h3 {
+        font-size: 1.2em;
+    }
+
+    .info-box p {
+        font-size: 0.9em;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
