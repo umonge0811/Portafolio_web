@@ -282,16 +282,10 @@ html {
 }
 
 
-/*SKILSS SECCION*/
-
+/* Skills Section */
 .skills {
-    
-    height: 50vh;
-    color: #fff;
-    margin-top: 0;
     padding: 50px 20px;
-    
-
+    color: #fff;
 }
 
 .skills .content-seccion {
@@ -312,7 +306,6 @@ html {
     margin: 10px 0;
     font-weight: lighter;
     text-justify: center;
-
 }
 
 
@@ -397,6 +390,7 @@ html {
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding-top: 50px; /* Asegura espacio suficiente para evitar superposición */
 }
 
 .glassmorphism {
@@ -423,7 +417,6 @@ html {
     position: relative;
     transition: transform 0.2s ease-in-out;
 }
-
 .box:hover {
     transform: scale(1.05);
 }
