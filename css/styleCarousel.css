@@ -36,45 +36,37 @@
 }
 
 .logos:before,
-.logos:after{
-    position:absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-}
-
-.logos:before{
-    left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);    
-}
-
-.logos:after{
-    right:0;
-    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);    
-}
-
-
-
+.logos:after,
 .logos2:before,
-.logos2:after{
-    position:absolute;
+.logos2:after {
+    position: absolute;
     top: 0;
-    width: 250px;
+    width: 250px; /* Ancho del gradiente en pantallas grandes */
     height: 100%;
     content: "";
     z-index: 2;
 }
 
-.logos2:before{
+.logos:before,
+.logos2:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);    
+    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);
 }
 
-.logos2:after{
-    right:0;
-    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);    
+.logos:after,
+.logos2:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logos:before,
+    .logos:after,
+    .logos2:before,
+    .logos2:after {
+        width: 100px; /* Reduce el ancho del gradiente en pantallas pequeñas */
+    }
 }
 
 .logos2-slide {
