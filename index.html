@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styleCarousel.css">
     <script src="/modal.js"></script>
+    <script src="/js_scritp.js"></script>
+
+
 
 </head>
 
@@ -24,14 +27,14 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#inicio">SOBRE MI</a></li>
-                    <li><a href="#inicio">PORTFOLIO</a></li>
-                    <li><a href="#inicio">SKILLS</a></li> 
-                    <li><a href="#inicio">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">SKILLS</a></li> 
+                    <li><a href="#inicio" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
@@ -103,24 +106,22 @@
                     <div class="container-intereses">
 
                         <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
+                            <i class="fas fa-gamepad"></i>
                             <span>JUEGOS</span>
                         </div>
-
                         <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
+                            <i class="fas fa-headphones"></i>
                             <span>MUSICA</span>
                         </div>
-
                         <div class="interes">
-                            <i class="fa-solid fa-drum"></i>
+                            <i class="fas fa-drum"></i>
                             <span>BATERIA</span>
                         </div>
-
                         <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
+                            <i class="fas fa-plane viajar-icon"></i>
                             <span>VIAJAR</span>
                         </div>
+                        
                     </div>
                 </div>
             </div>
