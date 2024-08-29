@@ -390,7 +390,7 @@ html {
     justify-content: center;
     align-items: center;
     color: #fff;
-    padding-top: 50px; /* Asegura espacio suficiente para evitar superposición */
+    padding-top: 10px; /* Asegura espacio suficiente para evitar superposición */
 }
 
 .glassmorphism {
