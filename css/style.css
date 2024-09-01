@@ -323,16 +323,6 @@ html {
 /* SECCION PORTFOLIO */
 
 
-/* .section-bento {
-    min-height: 100vh;
-    padding: 5% 12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    padding-top: 10px; /* Asegura espacio suficiente para evitar superposición */
-} */
 
 .glassmorphism {
     width: 100%;
@@ -344,45 +334,6 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* .bento-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 1em;
-    width: 100%;
-}
-
-.box {
-    border-radius: 1em;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-}
-
-.box:hover {
-    transform: scale(1.05);
-}
-
-.inner-box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.video-box video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* Iconos de Tecnologías */
 .icon-tech {
@@ -417,140 +368,10 @@ html {
     color: #fff;
 }
 
-/* Estilo para ajustar las fotos del segundo row */
-.bento-grid .image-box:nth-child(4),
-.bento-grid .image-box:nth-child(6) {
-    height: 250px;
-    /* width: calc(100% - 50px); Hace las fotos más angostas */
-}
 
-.bento-grid .info-box {
-    height: auto; /* El cuadro de texto se ajustará según el espacio disponible */
-    border: 1px solid #1CB698;
-    padding: 5px;
-} */
 
-/* Estilo del modal */
-#modal {
-    display: none; 
-    position: fixed; 
-    z-index: 100; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.9); 
-}
 
-/* Estilo del contenido del modal */
-.modal-content {
-    margin: 5% auto; 
-    padding: 20px;
-    width: 80%; 
-    max-width: 1200px; /* Ajusta este valor según lo necesites */
-}
 
-/* Estilo para el video dentro del modal */
-#modal-video {
-    width: 100%; 
-    height: auto; 
-    max-height: 80vh; /* Para asegurarte de que no se salga de la ventana */
-    background-color: #000;
-}
-
-/* Estilo para la imagen dentro del modal */
-#modal-img {
-    width: 100%; 
-    height: auto; 
-    max-height: 80vh;
-}
-
-/* Estilo para el botón de cierre */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Media Queries para Responsividad */
-
-/* Ajustes para tablets */
-@media screen and (max-width: 1024px) {
-    .bento-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .info-box h3 {
-        font-size: 1.5em;
-    }
-
-    .info-box p {
-        font-size: 1em;
-    }
-}
-
-/* Ajustes para móviles */
-@media screen and (max-width: 768px) {
-    .bento-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-    }
-
-    .info-box {
-        padding: 10px;
-    }
-
-    .info-box h3 {
-        font-size: 1.2em;
-    }
-
-    .info-box p {
-        font-size: 0.9em;
-    }
-
-    .box {
-        margin-bottom: 20px;
-    }
-
-    .modal-content {
-        width: 95%;
-    }
-}
-
-/* Responsive Navigation Menu */
-@media screen and (max-width: 980px) {
-    nav {
-        display: none;
-    }
-
-    .nav-responsive {
-        display: block;
-    }
-
-    nav.responsive {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-
-    nav.responsive ul {
-        display: block !important;
-    }
-
-    nav.responsive ul li {
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-    }
-}
 
 /* Carousel Gradient Adjustment */
 .logos:before,
@@ -592,5 +413,34 @@ html {
     .logos2:before,
     .logos2:after {
         width: 150px; /* Reduce the gradient width for mobile devices */
+    }
+}
+
+/* Responsive Navigation Menu */
+@media screen and (max-width: 980px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
     }
 }
