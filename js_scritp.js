@@ -35,4 +35,9 @@ document.querySelector('.close').addEventListener('click', function() {
     modalVideo.pause();
 });
 
+document.querySelector('.nav-responsive').addEventListener('click', function() {
+    const nav = document.querySelector('nav.responsive');
+    nav.classList.toggle('open');
+});
+
 

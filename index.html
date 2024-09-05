@@ -30,10 +30,10 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#inicio" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#inicio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#inicio" onclick="seleccionar()">SKILLS</a></li> 
-                    <li><a href="#inicio" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -69,7 +69,8 @@
             <h2>Sobre Mí</h2>
             <p><span>Hola, Soy Ulises Monge</span> estudiante avanzado de Ingeniería en Sistemas con una sólida base en
                 el desarrollo de software y aplicaciones web. A través de la formación académica y proyectos personales,
-                he adquirido experiencia y práctica en tecnologías como C#, .NET, HTML, JavaScript, CSS, y Blazor entre otras.
+                he adquirido experiencia y práctica en tecnologías como C#, .NET, HTML, JavaScript, CSS, y Blazor entre
+                otras.
                 Complementando los estudios universitarios con cursos adicionales, busco estar siempre al día con las
                 últimas herramientas y tendencias del sector. Aunque la experiencia laboral formal es limitada, la
                 dedicación al aprendizaje y la aplicación de conocimientos en proyectos reales han fortalecido la
@@ -92,14 +93,14 @@
                         </div>
 
                         <div class="interes">
-                            <i class="fa-regular fa-map"></i>   
+                            <i class="fa-regular fa-map"></i>
                         </div>
 
                         <div class="interes">
                             <i class="fa-solid fa-link"></i>
                         </div>
                     </div>
-                   
+
                 </div>
 
                 <!--INTERESES-->
@@ -123,7 +124,7 @@
                             <i class="fas fa-plane viajar-icon"></i>
                             <span>VIAJAR</span>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -137,136 +138,244 @@
         </div>
     </section>
 
-    <!--SKILSS-->
-    <section id="skills" class="skills">
-        <div class="content-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!--SKILLS TECNICAS-->
-                <h4>Lenguajes de Programación</h4>
-                <div class="col">                    
-                    <div class="logos">                        
-                        <div class="logos-slide">
-                            <img src="/assets/svg/css.svg">
-                            <img src="/assets/svg/html5.svg">
-                            <img src="/assets/svg/javascript.svg">
-                            <img src="/assets/svg/csharp.svg">
-                            <img src="/assets/svg/sql-server.svg">
-                            <img src="/assets/svg/python-svgrepo-com.svg">
-                            <img src="/assets/svg/dotnet-logo.svg">
-                        </div>                                        
-                    </div>
 
-                    <script>
-                        var copy = document.querySelector(".logos-slide").cloneNode(true);
-                        document.querySelector(".logos").appendChild(copy);
-                    </script>
-                    
+    <!-- SECCION PORTFOLIO -->
+
+    <section id="portfolio" class="section-bento">
+        <div class="content-seccion">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="bento">
+                <div class="frame">
+                    <div class="bento-box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
+                        <video src="/assets/videos/Blazor_Prov_Video.mp4" autoplay muted loop></video>
+                        <div class="filter">
+                            <div class="icon-tech">
+                                <img src="/assets/svg/blazor.svg" alt="C#">
+                                <img src="/assets/svg/css.svg" alt="css">
+                                <img src="/assets/svg/html5.svg" alt="html">
+                                <img src="/assets/svg/csharp.svg" alt="C#">
+                                <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
+                                <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+
+                            </div>
+                            <div class="title">Proyecto 1</div>
+                            <div class="container">
+                                <p>Sistema de Proveduria</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-2 bento-box video-box" data-video="/assets/videos/Blazor_Bib_Video.mp4">
+                        <video src="/assets/videos/Blazor_Bib_Video.mp4" autoplay muted loop></video>
+                        <div class="filter">
+                            <div class="icon-tech">
+                                <img src="/assets/svg/blazor.svg" alt="C#">
+                                <img src="/assets/svg/css.svg" alt="css">
+                                <img src="/assets/svg/html5.svg" alt="html">
+                                <img src="/assets/svg/csharp.svg" alt="C#">
+                                <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
+                                <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+                            </div>
+                            <div class="title">Proyecto 2</div>
+                            <div class="container">
+                                <p>Biblioteca</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="filas">
-                    <h4>Frameworks y otros</h4>
-                    <div class="col">                    
-                        <div class="logos2">                        
-                            <div class="logos2-slide">
-                                <img src="/assets/svg/bootstrap.svg">
-                                <img src="/assets/svg/figma.svg">
-                                <img src="/assets/svg/git.svg">
-                                <img src="/assets/svg/Github_dark.svg">
-                                <img src="/assets/svg/materialui.svg">
-                                <img src="/assets/svg/notion.svg">
-                                <img src="/assets/svg/tailwindcss.svg">
-                                <img src="/assets/svg/visual-studio.svg">
-                                <img src="/assets/svg/vscode.svg">    
-                            </div>                                        
+                <div class="frame-3">
+                    <div class="frame-2 bento-box video-box" data-video="/assets/videos/HTML_VentaTiq.mp4">
+                        <video src="/assets/videos/HTML_VentaTiq.mp4" autoplay muted loop></video>
+                        <div class="filter">
+                            <div class="icon-tech">
+                                <img src="/assets/svg/html5.svg" alt="HTML5">
+                                <img src="/assets/svg/css.svg" alt="CSS3">
+                                <img src="/assets/svg/javascript.svg" alt="JavaScript">
+                                <img src="/assets/svg/bootstrap.svg" alt="Bootstrap">
+                            </div>
+                            <div class="title">Proyecto 3</div>
+                            <div class="container">
+                                <p>Pagina par Venta de Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-4 bento-box video-box" data-video="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4">
+                        <video src="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4" autoplay muted loop></video>
+                        <div class="filter">
+                            <div class="icon-tech">
+                                <img src="/assets/svg/csharp.svg" alt="C#">
+                                <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
+
+                            </div>
+                            <div class="title">Proyecto 4</div>
+                            <div class="container">
+                                <p>Cobros Recibos de Consumo de Agua Potable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-2 bento-box video-box" data-video="/assets/videos/Blazor_Bib_Video.mp4">
+                        <video src="/assets/videos/Blazor_Bib_Video.mp4" autoplay muted loop></video>
+                        <div class="filter">
+                            <div class="icon-tech">
+                                <img src="/assets/svg/css.svg" alt="css">
+                                <img src="/assets/svg/html5.svg" alt="html">
+                                <img src="/assets/svg/csharp.svg" alt="C#">
+                            </div>
+                            <div class="title">Proyecto 5</div>
+                            <div class="container">
+                                <p>Sistema de Proveduria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!--SKILSS-->
+        <section id="skills" class="skills">
+            <div class="content-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!--SKILLS TECNICAS-->
+                    <h4>Lenguajes de Programación</h4>
+                    <div class="col">
+                        <div class="logos">
+                            <div class="logos-slide">
+                                <img src="/assets/svg/css.svg">
+                                <img src="/assets/svg/html5.svg">
+                                <img src="/assets/svg/javascript.svg">
+                                <img src="/assets/svg/csharp.svg">
+                                <img src="/assets/svg/sql-server.svg">
+                                <img src="/assets/svg/python-svgrepo-com.svg">
+                                <img src="/assets/svg/dotnet-logo.svg">
+    
+                            </div>
                         </div>
     
                         <script>
-                            var copy = document.querySelector(".logos2-slide").cloneNode(true);
-                            document.querySelector(".logos2").appendChild(copy);
+                            var copy = document.querySelector(".logos-slide").cloneNode(true);
+                            document.querySelector(".logos").appendChild(copy);
                         </script>
-                        
+    
                     </div>
+                    <div class="filas">
+                        <h4>Frameworks y otros</h4>
+                        <div class="col">
+                            <div class="logos2">
+                                <div class="logos2-slide">
+                                    <img src="/assets/svg/bootstrap.svg">
+                                    <img src="/assets/svg/figma.svg">
+                                    <img src="/assets/svg/git.svg">
+                                    <img src="/assets/svg/Github_dark.svg">
+                                    <img src="/assets/svg/materialui.svg">
+                                    <img src="/assets/svg/notion.svg">
+                                    <img src="/assets/svg/tailwindcss.svg">
+                                    <img src="/assets/svg/visual-studio.svg">
+                                    <img src="/assets/svg/vscode.svg">
+                                    <img src="/assets/svg/blazor.svg">
+                                </div>
+                            </div>
+    
+                            <script>
+                                var copy = document.querySelector(".logos2-slide").cloneNode(true);
+                                document.querySelector(".logos2").appendChild(copy);
+                            </script>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </section>
+    
+
+    <section id="contacto" class="contacto">
+        <div class="content-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Número telefonico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+
 
                 </div>
-               
+
+                <!--MAPA-->
+                <div class="col">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7853.860231608567!2d-83.7830534!3d10.186330799999999!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDExJzEwLjciTiA4M8KwNDYnNTkuNCJX!5e0!3m2!1ses-419!2scr!4v1725566935984!5m2!1ses-419!2scr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Costa Rica, Limón Guapiles, Buenos Aires
+                            </li>
+                            <li>
+
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame al: +506 6282-8588
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+
+                                Escribeme al Email: umongegds@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </div>
+
 
     </section>
 
-     <!-- SECCION PORTFOLIO -->
- 
-     <section class="section-bento">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="bento">
-            <div class="frame">
-                <div class="bento-box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
-                    <video src="/assets/videos/Blazor_Prov_Video.mp4" autoplay muted loop></video>
-                    <div class="filter">
-                        <div class="icon-tech">
-                            <img src="/assets/svg/css.svg" alt="css">
-                            <img src="/assets/svg/html5.svg" alt="html">
-                            <img src="/assets/svg/csharp.svg" alt="C#">
-                        </div>
-                        <div class="title">Proyecto 1</div>
-                    </div>
-                </div>
-                <div class="frame-2 bento-box video-box" data-video="/assets/videos/Blazor_Bib_Video.mp4">
-                    <video src="/assets/videos/Blazor_Bib_Video.mp4" autoplay muted loop></video>
-                    <div class="filter">
-                        <div class="icon-tech">
-                            <img src="/assets/svg/bootstrap.svg" alt="bootstrap">
-                            <img src="/assets/svg/visual-studio.svg" alt="visual-studio">
-                        </div>
-                        <div class="title">Proyecto 2</div>
-                    </div>
-                </div>
-            </div>
-            <div class="frame-3">
-                <div class="frame-2 bento-box video-box" data-video="/assets/videos/HTML_VentaTiq.mp4">
-                    <video src="/assets/videos/HTML_VentaTiq.mp4" autoplay muted loop></video>
-                    <div class="filter">
-                        <div class="icon-tech">
-                            <img src="/assets/svg/html5.svg" alt="HTML5">
-                            <img src="/assets/svg/css.svg" alt="CSS3">
-                        </div>
-                        <div class="title">Proyecto 3</div>
-                    </div>
-                </div>
-                <div class="frame-4 bento-box video-box" data-video="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4">
-                    <video src="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4" autoplay muted loop></video>
-                    <div class="filter">
-                        <div class="icon-tech">
-                            <img src="/assets/svg/javascript.svg" alt="JavaScript">
-                            <img src="/assets/svg/bootstrap.svg" alt="Bootstrap">
-                        </div>
-                        <div class="title">Proyecto 4</div>
-                    </div>
-                </div>
-                <div class="frame-2 bento-box video-box" data-video="/assets/videos/Blazor_Bib_Video.mp4">
-                    <video src="/assets/videos/Blazor_Bib_Video.mp4" autoplay muted loop></video>
-                    <div class="filter">
-                        <div class="icon-tech">
-                            <img src="/assets/svg/css.svg" alt="css">
-                            <img src="/assets/svg/html5.svg" alt="html">
-                            <img src="/assets/svg/csharp.svg" alt="C#">
-                        </div>
-                        <div class="title">Proyecto 5</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        
 
-   <!-- Modal Structure -->
-<div id="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <video id="modal-video" controls></video>
-        <img id="modal-img" alt="Imagen del Proyecto">
+    <!--FOOTER-->
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+
+        </a>
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- Modal Structure -->
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modal-video" controls></video>
+            <img id="modal-img" alt="Imagen del Proyecto">
+        </div>
     </div>
-</div> 
+
+
 </body>
 
 </html>
