@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Portafolio</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styleCarousel.css">
     <link rel="stylesheet" href="/css/bento.css">
     <script src="/modal.js"></script>
     <script src="/js_scritp.js"></script>
-
-
-
-
 </head>
 
 
@@ -25,19 +22,19 @@
     <div class="container-header">
         <header>
             <div class="logo">
-                <a href="#">Ulises M.A</a>
+                <a href="#" class="animate-on-scroll" data-animation="animate__fadeIn">Ulises M.A</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">PORTFOLIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">SKILLS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars animate-on-scroll" data-animation="animate__fadeIn"></i>
             </div>
 
         </header>
@@ -48,13 +45,13 @@
     <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
         <div class="content-banner">
-            <div class="container-img">
+            <div class="container-img animate__animated" data-animation="animate__zoomIn">
                 <img src="/assets/img/ulises3.png" alt="">
             </div>
-            <h1>Ulises Monge Aguilar</h1>
-            <h2>Desarrollador de Software & Web</h2>
-            <h4>Estudiante de Ingeniería en Sistemas</h4>
-            <div class="redes">
+            <h1 class="animate__animated" data-animation="animate__bounceInDown">Ulises Monge Aguilar</h1>
+            <h2 class="animate__animated" data-animation="animate__fadeInLeft">Desarrollador de Software & Web</h2>
+            <h4 class="animate__animated" data-animation="animate__fadeInRight">Estudiante de Ingeniería en Sistemas</h4>
+            <div class="redes animate__animated" data-animation="animate__bounceInUp">
                 <a href="https://github.com/umonge0811"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ulises-monge-aguilar-88a694222/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
@@ -66,8 +63,8 @@
     <section id="sobremi" class="sobremi">
 
         <div class="content-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, Soy Ulises Monge</span> estudiante avanzado de Ingeniería en Sistemas con una sólida base en
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Sobre Mí</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn">Hola, <span></span>Soy Ulises Monge</span> estudiante avanzado de Ingeniería en Sistemas con una sólida base en
                 el desarrollo de software y aplicaciones web. A través de la formación académica y proyectos personales,
                 he adquirido experiencia y práctica en tecnologías como C#, .NET, HTML, JavaScript, CSS, y Blazor entre
                 otras.
@@ -79,7 +76,7 @@
             </p>
 
 
-            <div class="fila">
+            <div class="fila animate-on-scroll" data-animation="animate__fadeInUp">
                 <!--DATOS PERSONALES-->
                 <div class="col">
                     <h3>Datos personales</h3>
@@ -129,7 +126,7 @@
                 </div>
             </div>
 
-            <button onclick="descargarCV()">
+            <button onclick="descargarCV()" class="animate-on-scroll" data-animation="animate__fadeIn">
                 Descargar CV
                 <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
@@ -143,7 +140,7 @@
 
     <section id="portfolio" class="section-bento">
         <div class="content-seccion">
-            <h2 class="section-title">Portfolio</h2>
+            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInDown">Portfolio</h2>
             <div class="bento">
                 <div class="frame">
                     <div class="bento-box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
@@ -236,10 +233,10 @@
         <!--SKILSS-->
         <section id="skills" class="skills">
             <div class="content-seccion">
-                <h2>Skills</h2>
+                <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Skills</h2>
                 <div class="fila">
                     <!--SKILLS TECNICAS-->
-                    <h4>Lenguajes de Programación</h4>
+                    <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Lenguajes de Programación</h4>
                     <div class="col">
                         <div class="logos">
                             <div class="logos-slide">
@@ -261,7 +258,7 @@
     
                     </div>
                     <div class="filas">
-                        <h4>Frameworks y otros</h4>
+                        <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Frameworks y otros</h4>
                         <div class="col">
                             <div class="logos2">
                                 <div class="logos2-slide">
@@ -295,7 +292,7 @@
 
     <section id="contacto" class="contacto">
         <div class="content-seccion">
-            <h2>CONTACTO</h2>
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">CONTACTO</h2>
             <div class="fila">
                 <!--FORMULARIO-->
                 <div class="col">
@@ -305,7 +302,7 @@
                         <input type="email" name="email" placeholder="Dirección de correo" required>
                         <input type="text" name="tema" placeholder="Tema" required>
                         <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
-                        <button type="submit">
+                        <button type="submit" class="animate-on-scroll" data-animation="animate__fadeIn">
                             Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
@@ -322,16 +319,16 @@
 
                     <div class="info">
                         <ul>
-                            <li>
+                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-location-dot"></i>
                                 Costa Rica, Limón Guapiles, Buenos Aires
                             </li>
-                            <li>
+                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
 
                                 <i class="fa-solid fa-mobile-screen"></i>
                                 Llamame al: +506 6282-8588
                             </li>
-                            <li>
+                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-envelope"></i>
 
                                 Escribeme al Email: umongegds@gmail.com
@@ -374,6 +371,39 @@
         </div>
     </div>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+            const animateElements = document.querySelectorAll('#inicio .animate__animated');
+            animateElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add(element.dataset.animation);
+                }, index * 200); // Retraso escalonado para cada elemento
+            });
+        }, 500); // Retraso inicial de 500ms
+
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const animationClass = entry.target.dataset.animation;
+                    entry.target.classList.add('animate__animated', animationClass);
+                } else {
+                    const animationClass = entry.target.dataset.animation;
+                    entry.target.classList.remove('animate__animated', animationClass);
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, {
+            root: null,
+            threshold: 0.1 // Ajusta este valor según necesites
+        });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
 
 </body>
 

@@ -349,6 +349,10 @@ html {
     height: 20px;
 }
 
+
+
+
+
 /* Info Box Styles */
 .info-box {
     display: flex;
@@ -600,3 +604,68 @@ footer .redes  a:hover{
         font-size: 18px;
 
     }
+
+/* Media queries para la sección de contacto y footer */
+@media screen and (max-width: 768px) {
+    .contacto .fila {
+        flex-direction: column;
+    }
+
+    .contacto .col {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contacto .col .info {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .contacto .col iframe {
+        height: 300px;
+    }
+
+    footer .redes a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        margin: 20px 3px;
+        font-size: 16px;
+    }
+
+    footer .arriba {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacto h2 {
+        font-size: 2em;
+    }
+
+    .contacto .col input, .contacto .col textarea {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .contacto button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px 0 20px 0;
+    }
+
+    footer .redes a {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 15px 2px;
+        font-size: 14px;
+    }
+}
