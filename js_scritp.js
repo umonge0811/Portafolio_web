@@ -93,3 +93,35 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('El formulario con ID "contactForm" no se encontró en el documento.');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        const animateElements = document.querySelectorAll('#inicio .animate__animated');
+        animateElements.forEach((element, index) => {
+            setTimeout(() => {
+                element.classList.add(element.dataset.animation);
+            }, index * 200); // Retraso escalonado para cada elemento
+        });
+    }, 500); // Retraso inicial de 500ms
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const animationClass = entry.target.dataset.animation;
+                entry.target.classList.add('animate__animated', animationClass);
+            } else {
+                const animationClass = entry.target.dataset.animation;
+                entry.target.classList.remove('animate__animated', animationClass);
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null,
+        threshold: 0.1 // Ajusta este valor según necesites
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+        observer.observe(element);
+    });
+});
