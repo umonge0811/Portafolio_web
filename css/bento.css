@@ -17,8 +17,6 @@
 .section-bento {
     padding-top: 80px; /* Ajusta este valor según la altura de tu nav */
 }
-
-
 .section-title {
     font-size: 3em;
     font-family: 'Righteous', sans-serif;
@@ -54,15 +52,21 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(30, 35, 38, 0.8);
-    backdrop-filter: blur(15px);
+    background: linear-gradient(
+        135deg,
+        rgba(28, 182, 152, 0.2) 0%,
+        rgba(30, 35, 38, 0.8) 50%,
+        rgba(28, 182, 152, 0.4) 100%
+    );
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: transform 0.5s ease-in-out;
-    transform: translateY(0);
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: scaleX(1) scaleY(1);
+    transform-origin: bottom right;
 }
 
 .bento-box .filter .container{
@@ -94,10 +98,21 @@
     font-weight: bold;
     margin-top: 10px;
     font-family: 'Righteous', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .bento-box:hover .filter {
-    transform: translateY(-100%);
+    transform: scaleX(0) scaleY(0);
+}
+
+.bento-box .content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bento-box:hover .content {
+    opacity: 1;
+    transition-delay: 0.3s;
 }
 
 .bento-box video, .bento-box img {

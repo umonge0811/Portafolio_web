@@ -55,8 +55,8 @@
             <h2>Desarrollador de Software & Web</h2>
             <h4>Estudiante de Ingeniería en Sistemas</h4>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/umonge0811"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ulises-monge-aguilar-88a694222/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </section>
@@ -129,7 +129,7 @@
                 </div>
             </div>
 
-            <button>
+            <button onclick="descargarCV()">
                 Descargar CV
                 <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
@@ -299,18 +299,17 @@
             <div class="fila">
                 <!--FORMULARIO-->
                 <div class="col">
-                    <input type="text" placeholder="Tu Nombre">
-                    <input type="text" placeholder="Número telefonico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-regular fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-
-
-
+                    <form id="contactForm" action="https://formspree.io/f/xanwkdgd" method="POST">
+                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                        <input type="tel" name="telefono" placeholder="Número telefónico" required>
+                        <input type="email" name="email" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema" required>
+                        <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
 
                 <!--MAPA-->
@@ -357,11 +356,11 @@
         </a>
 
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://www.facebook.com/umonge08/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/umonge08"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ulises-monge-aguilar-88a694222/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/50662828588"><i class="fa-brands fa-whatsapp"></i></a>
+
         </div>
     </footer>
 

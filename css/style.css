@@ -580,6 +580,11 @@ footer .redes  a{
     transition: .3s;
 }
 
+footer .redes  a:hover{
+    background-color: #1CB698;
+    transform: scaleX(1.4) scaleY(1.4);
+}
+
     footer .arriba{
         display: block;
         width: 50px;

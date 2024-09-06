@@ -40,4 +40,56 @@ document.querySelector('.nav-responsive').addEventListener('click', function() {
     nav.classList.toggle('open');
 });
 
+function descargarCV() {
+    // Reemplaza 'ruta/al/cv.pdf' con la ruta real de tu archivo CV
+    var urlCV = '/assets/CV_Ulises_Monge_Aguilar_ES.pdf';
+    
+    // Crea un elemento <a> temporal
+    var link = document.createElement('a');
+    link.href = urlCV;
+    
+    // Establece el atributo download con el nombre del archivo
+    link.download = 'CV_Ulises_Monge_Aguilar_ES.pdf';
+    
+    // Añade el enlace al documento y simula un clic
+    document.body.appendChild(link);
+    link.click();
+    
+    // Elimina el enlace del documento
+    document.body.removeChild(link);
+}
 
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    form.reset();
+                    alert('Mensaje enviado con éxito!');
+                } else {
+                    throw new Error('Error en el envío del formulario');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+            });
+        });
+    } else {
+        console.error('El formulario con ID "contactForm" no se encontró en el documento.');
+    }
+});
