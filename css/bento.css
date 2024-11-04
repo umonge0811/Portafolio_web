@@ -1,3 +1,6 @@
+:root {
+    --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+}
 .bento {
     display: flex;
     flex-direction: column;
@@ -10,7 +13,7 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 16px;
-    border: 1px solid #1CB698;
+    border: 1px solid var(--color-primario);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1)
 }
 
@@ -71,7 +74,7 @@
 
 .bento-box .filter .container{
 
-   border: 1px solid #1CB698;
+   border: 1px solid var(--color-primario);
    border-radius: 5px;
    padding: 0.2em;
    background: rgba(8, 54, 50, 0.8);
@@ -93,7 +96,7 @@
 }
 
 .bento-box .title {
-    color: #1CB698;
+    color: var(--color-primario);
     font-size: 28px;
     font-weight: bold;
     margin-top: 10px;

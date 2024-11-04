@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -43,7 +47,7 @@ html {
 .container-header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1cb698;
+    color: var(--color-primario);
     text-decoration: none;
 }
 
@@ -62,11 +66,11 @@ html {
 }
 
 .container-header header nav ul li a:hover {
-    color: #1cb698;
+    color: var(--color-primario);
 }
 
 .nav-responsive {
-    background-color: #1cb698;
+    background-color: var(--color-primario);
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -91,7 +95,7 @@ html {
     background: rgba(37, 42, 46, 0.3);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border: 1px solid #1cb698;
+    border: 1px solid var(--color-primario);
     max-width: 350px;
     margin: auto;
     margin-top: 100px;
@@ -145,7 +149,7 @@ html {
 }
 
 .inicio .content-banner .redes a:hover {
-    background-color: #1cb698;
+    background-color: var(--color-primario);
     transform: scaleX(1.4) scaleY(1.4);
 }
 
@@ -179,7 +183,7 @@ html {
 }
 
 .sobremi .content-seccion p span {
-    color: #1CB698;
+    color: var(--color-primario);
     font-weight: bold;
 }
 
@@ -214,12 +218,12 @@ html {
 
 .sobremi .fila .col ul li strong {
     display: inline-block;
-    color: #1CB698;
+    color: var(--color-primario);
     width: 130px;
 }
 
 .sobremi .fila .col ul li span {
-    background-color: #1CB698;
+    background-color: var(--color-primario);
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -259,7 +263,7 @@ html {
 
 
 .sobremi .fila .col .container-intereses .interes:hover {
-    background-color: #1CB698;
+    background-color: var(--color-primario);
 }
 
 .sobremi .fila .col .container-intereses .interes i {
@@ -287,7 +291,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: var(--color-primario);
     z-index: -1;
     transition: 1s;
 }
@@ -366,7 +370,7 @@ html {
 .info-box h3 {
     font-size: 2em;
     font-family: 'Righteous';
-    color: #1CB698;
+    color: var(--color-primario);
 }
 
 .info-box p {
@@ -520,7 +524,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: var(--color-primario);
     z-index: -1;
     transition: 1s;
 }
@@ -553,7 +557,7 @@ html {
 }
 
 .contacto .col .info ul li i{
-    color: #1CB698;
+    color: var(--color-primario);
     display: inline-block;
     margin-right: 20px;
 }
@@ -587,7 +591,7 @@ footer .redes  a{
 }
 
 footer .redes  a:hover{
-    background-color: #1CB698;
+    background-color: var(--color-primario);
     transform: scaleX(1.4) scaleY(1.4);
 }
 
@@ -595,7 +599,7 @@ footer .redes  a:hover{
         display: block;
         width: 50px;
         height: 50px;
-        background-color: #1cb698;
+        background-color: var(--color-primario);
         color: #fff;
         position: absolute;
         left: 50%;

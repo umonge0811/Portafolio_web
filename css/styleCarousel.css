@@ -1,4 +1,6 @@
-
+:root {
+    --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+}
 
 @keyframes slide{
     from{
@@ -29,7 +31,7 @@
     -webkit-backdrop-filter: blur(11px);
     backdrop-filter: blur(11px);
     border-radius: 10px;
-    border: 1px solid #1cb698;
+    border: 1px solid var(--color-primario);
     box-shadow: 3px 2px 5px #045c4a;
     white-space: nowrap;
     position: relative;
