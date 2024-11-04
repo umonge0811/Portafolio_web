@@ -1,5 +1,8 @@
 :root {
     --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+    --font-titulo: 'Montserrat', sans-serif; /* Fuente para títulos y encabezados */
+    --font-cuerpo: 'Avenir Next', sans-serif; /* Fuente para cuerpos de texto */
+    --font-subtitulo: 'Poppins', sans-serif; /* Fuente para subtítulos y textos destacados */
 }
 
 @keyframes slide{

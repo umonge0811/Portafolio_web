@@ -1,5 +1,8 @@
 :root {
     --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+    --font-titulo: 'Montserrat', sans-serif; /* Fuente para títulos y encabezados */
+    --font-cuerpo: 'Avenir Next', sans-serif; /* Fuente para cuerpos de texto */
+    --font-subtitulo: 'Poppins', sans-serif; /* Fuente para subtítulos y textos destacados */
 }
 .bento {
     display: flex;
@@ -22,7 +25,7 @@
 }
 .section-title {
     font-size: 3em;
-    font-family: 'Righteous', sans-serif;
+    font-family: var(--font-titulo);
     text-align: center;
     margin-bottom: 20px;
     padding-top: 20px;
@@ -86,7 +89,7 @@
     color: #fff;
     font-size: small;
     font-weight: lighter;
-    font-family:'Righteous', sans-serif;
+    font-family: var(--font-subtitulo);
 
 }
 
@@ -100,7 +103,7 @@
     font-size: 28px;
     font-weight: bold;
     margin-top: 10px;
-    font-family: 'Righteous', sans-serif;
+    font-family: var(--font-titulo);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
