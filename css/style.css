@@ -1,5 +1,6 @@
 :root {
     --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+
     --font-titulo: 'Montserrat', sans-serif; /* Fuente para títulos y encabezados */
     --font-cuerpo: 'Avenir Next', sans-serif; /* Fuente para cuerpos de texto */
     --font-subtitulo: 'Poppins', sans-serif; /* Fuente para subtítulos y textos destacados */
@@ -60,6 +61,19 @@ html {
     height: auto;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
     margin-right: 20px; /* Añade espacio entre el logo y el menú */
+
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0px 0px 2.2px rgba(184, 233, 134, 0.8));
+    transform: scaleX(1.01) scaleY(1.01);
+
+}
+
+.spam:hover {
+    filter: drop-shadow(0px 0px 2.2px rgba(184, 233, 134, 0.8));
+    transform: scaleX(1.01) scaleY(1.01);
+
 }
 
 .container-header header ul {
