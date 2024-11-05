@@ -109,17 +109,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 const animationClass = entry.target.dataset.animation;
                 entry.target.classList.add('animate__animated', animationClass);
-            } else {
-                const animationClass = entry.target.dataset.animation;
-                entry.target.classList.remove('animate__animated', animationClass);
+                observer.unobserve(entry.target); // Deja de observar una vez que la animación se activa
             }
         });
     }
+    
 
     const observer = new IntersectionObserver(handleIntersection, {
         root: null,
-        threshold: 0.1 // Ajusta este valor según necesites
+        threshold: 0.5 // Ajusta este valor según el comportamiento que prefieras
     });
+    
 
     document.querySelectorAll('.animate-on-scroll').forEach(element => {
         observer.observe(element);
