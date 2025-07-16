@@ -126,7 +126,7 @@ function descargarVideoEmma(videoUrl, nombreArchivo) {
 
 // Función para cargar videos de Emma dinámicamente
 function cargarVideosEmma() {
-    // Lista de videos de Emma (actualiza esta lista cuando agregues videos)
+    // Lista de videos de Emma - exactamente como están en /assets/videos_emma/
     const videosEmma = [
         { 
             src: '/assets/videos_emma/Aprende los colores en inglés ｜ Colors vocabulary [8VWfK4SleTs].mp4', 
@@ -135,8 +135,8 @@ function cargarVideosEmma() {
         },
         { 
             src: '/assets/videos_emma/Episodio 1-26 ¡Todos los episodios! ｜ Barbie Dreamhouse Adventures ｜ @BarbieenCastellano [tEcCJp-MOQg].mp4', 
-            title: 'Barbie Dreamhouse Adventures', 
-            description: 'Episodios completos de Barbie Dreamhouse Adventures' 
+            title: 'Barbie Dreamhouse Adventures - Episodios 1-26', 
+            description: 'Todos los episodios de Barbie Dreamhouse Adventures' 
         },
         { 
             src: '/assets/videos_emma/Hawaiian Roller Coaster Ride (From ＂Lilo & Stitch＂) [3OM7oi79hd4].mp4', 
