@@ -94,7 +94,57 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Función para descargar videos
+function descargarVideo(videoUrl, nombreArchivo) {
+    // Crear un elemento <a> temporal para la descarga
+    var link = document.createElement('a');
+    link.href = videoUrl;
+    link.download = nombreArchivo;
+    
+    // Añadir el enlace al documento y simular un clic
+    document.body.appendChild(link);
+    link.click();
+    
+    // Eliminar el enlace del documento
+    document.body.removeChild(link);
+}
+
+// Función para reproducir preview de videos en la sección videos
+function reproducirPreview(video) {
+    video.play();
+}
+
+function pausarPreview(video) {
+    video.pause();
+    video.currentTime = 0;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Agregar eventos para preview de videos en la sección videos
+    document.querySelectorAll('.video-preview').forEach(preview => {
+        const video = preview.querySelector('video');
+        const overlay = preview.querySelector('.video-overlay');
+        
+        preview.addEventListener('mouseenter', function() {
+            reproducirPreview(video);
+        });
+        
+        preview.addEventListener('mouseleave', function() {
+            pausarPreview(video);
+        });
+        
+        // Al hacer clic en el overlay, abrir el modal
+        overlay.addEventListener('click', function() {
+            const videoSrc = video.src;
+            const modal = document.getElementById('modal');
+            const modalVideo = document.getElementById('modal-video');
+
+            modal.style.display = "block";
+            modalVideo.src = videoSrc;
+            modalVideo.play();
+        });
+    });
+
     setTimeout(() => {
         const animateElements = document.querySelectorAll('#inicio .animate__animated');
         animateElements.forEach((element, index) => {
