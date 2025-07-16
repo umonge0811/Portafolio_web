@@ -124,108 +124,7 @@ function descargarVideoEmma(videoUrl, nombreArchivo) {
     document.body.removeChild(link);
 }
 
-// Función para cargar videos de Emma dinámicamente
-function cargarVideosEmma() {
-    // Lista de videos de Emma - exactamente como están en /assets/videos_emma/
-    const videosEmma = [
-        { 
-            src: '/assets/videos_emma/Aprende los colores en inglés ｜ Colors vocabulary [8VWfK4SleTs].mp4', 
-            title: 'Aprende los colores en inglés', 
-            description: 'Video educativo para aprender los colores en inglés' 
-        },
-        { 
-            src: '/assets/videos_emma/Episodio 1-26 ¡Todos los episodios! ｜ Barbie Dreamhouse Adventures ｜ @BarbieenCastellano [tEcCJp-MOQg].mp4', 
-            title: 'Barbie Dreamhouse Adventures - Episodios 1-26', 
-            description: 'Todos los episodios de Barbie Dreamhouse Adventures' 
-        },
-        { 
-            src: '/assets/videos_emma/Hawaiian Roller Coaster Ride (From ＂Lilo & Stitch＂) [3OM7oi79hd4].mp4', 
-            title: 'Hawaiian Roller Coaster Ride', 
-            description: 'Canción de Lilo & Stitch - Hawaiian Roller Coaster Ride' 
-        },
-        { 
-            src: '/assets/videos_emma/La Carrera Increíble ｜ @BarbieenCastellano [DhfD-Fzl2og].mp4', 
-            title: 'La Carrera Increíble - Barbie', 
-            description: 'Episodio de Barbie - La Carrera Increíble' 
-        },
-        { 
-            src: '/assets/videos_emma/Lilo & Stitch： The Series ＂Angel＂ Full Episode! 💙🩷 ｜ Lilo & Stitch ｜ @disneychannelanimation [kX4wbaMVt-4].mp4', 
-            title: 'Lilo & Stitch - Angel Episode', 
-            description: 'Episodio completo de Lilo & Stitch - Angel' 
-        }
-    ];
-    
-    const grid = document.querySelector('#videos-emma .videos-grid');
-    
-    if (!grid) {
-        console.error('No se encontró el contenedor de videos de Emma');
-        return;
-    }
-    
-    // Limpiar el grid y agregar los videos
-    grid.innerHTML = '';
-    
-    if (videosEmma.length === 0) {
-        // Mostrar mensaje si no hay videos
-        grid.innerHTML = `
-            <div class="video-item">
-                <div class="video-info" style="text-align: center; padding: 40px;">
-                    <h3>Próximamente</h3>
-                    <p>Los videos de Emma se mostrarán aquí una vez que sean subidos a la carpeta /assets/videos_emma/</p>
-                </div>
-            </div>
-        `;
-        return;
-    }
-    
-    videosEmma.forEach((video, index) => {
-        const videoItem = document.createElement('div');
-        videoItem.className = 'video-item';
-        
-        videoItem.innerHTML = `
-            <div class="video-preview">
-                <video src="${video.src}" muted></video>
-                <div class="video-overlay">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-            </div>
-            <div class="video-info">
-                <h3>${video.title}</h3>
-                <p>${video.description}</p>
-                <button onclick="descargarVideoEmma('${video.src}', '${video.title.replace(/\s+/g, '_')}.mp4')" class="download-btn">
-                    <i class="fa-solid fa-download"></i>
-                    Descargar Video
-                </button>
-            </div>
-        `;
-        
-        grid.appendChild(videoItem);
-    });
-    
-    // Agregar eventos para preview de videos
-    grid.querySelectorAll('.video-preview').forEach(preview => {
-        const video = preview.querySelector('video');
-        const overlay = preview.querySelector('.video-overlay');
-        
-        preview.addEventListener('mouseenter', function() {
-            reproducirPreview(video);
-        });
-        
-        preview.addEventListener('mouseleave', function() {
-            pausarPreview(video);
-        });
-        
-        overlay.addEventListener('click', function() {
-            const videoSrc = video.src;
-            const modal = document.getElementById('modal');
-            const modalVideo = document.getElementById('modal-video');
 
-            modal.style.display = "block";
-            modalVideo.src = videoSrc;
-            modalVideo.play();
-        });
-    });
-}
 
 // Función para reproducir preview de videos en la sección videos
 function reproducirPreview(video) {
@@ -238,7 +137,7 @@ function pausarPreview(video) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Agregar eventos para preview de videos en la sección videos
+    // Agregar eventos para preview de videos en todas las secciones
     document.querySelectorAll('.video-preview').forEach(preview => {
         const video = preview.querySelector('video');
         const overlay = preview.querySelector('.video-overlay');
@@ -292,7 +191,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.animate-on-scroll').forEach(element => {
         observer.observe(element);
     });
-    
-    // Cargar videos de Emma
-    cargarVideosEmma();
 });
