@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const observer = new IntersectionObserver(handleIntersection, {
         root: null,
-        threshold: 0.5 // Ajusta este valor según el comportamiento que prefieras
+        threshold: 0.1 // Activar animación cuando solo el 10% del elemento sea visible
     });
     
 
