@@ -109,6 +109,21 @@ function descargarVideo(videoUrl, nombreArchivo) {
     document.body.removeChild(link);
 }
 
+// Función específica para descargar videos de Emma
+function descargarVideoEmma(videoUrl, nombreArchivo) {
+    // Crear un elemento <a> temporal para la descarga
+    var link = document.createElement('a');
+    link.href = videoUrl;
+    link.download = nombreArchivo;
+    
+    // Añadir el enlace al documento y simular un clic
+    document.body.appendChild(link);
+    link.click();
+    
+    // Eliminar el enlace del documento
+    document.body.removeChild(link);
+}
+
 // Función para cargar videos de Emma dinámicamente
 function cargarVideosEmma() {
     // Lista de videos de Emma (actualiza esta lista cuando agregues videos)
@@ -164,7 +179,7 @@ function cargarVideosEmma() {
             <div class="video-info">
                 <h3>${video.title}</h3>
                 <p>${video.description}</p>
-                <button onclick="descargarVideo('${video.src}', '${video.title.replace(/\s+/g, '_')}.mp4')" class="download-btn">
+                <button onclick="descargarVideoEmma('${video.src}', '${video.title.replace(/\s+/g, '_')}.mp4')" class="download-btn">
                     <i class="fa-solid fa-download"></i>
                     Descargar Video
                 </button>
