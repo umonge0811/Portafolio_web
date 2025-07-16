@@ -109,6 +109,72 @@ function descargarVideo(videoUrl, nombreArchivo) {
     document.body.removeChild(link);
 }
 
+// Función para cargar videos de Emma dinámicamente
+function cargarVideosEmma() {
+    // Lista de videos de Emma (actualiza esta lista cuando agregues videos)
+    const videosEmma = [
+        // Ejemplo: { src: '/assets/videos_emma/video1.mp4', title: 'Video Emma 1', description: 'Descripción del video' }
+    ];
+    
+    const grid = document.querySelector('#videos-emma .videos-grid');
+    
+    if (videosEmma.length === 0) {
+        // Mantener el mensaje de "Próximamente" si no hay videos
+        return;
+    }
+    
+    // Limpiar el grid y agregar los videos
+    grid.innerHTML = '';
+    
+    videosEmma.forEach((video, index) => {
+        const videoItem = document.createElement('div');
+        videoItem.className = 'video-item';
+        
+        videoItem.innerHTML = `
+            <div class="video-preview">
+                <video src="${video.src}" muted></video>
+                <div class="video-overlay">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>${video.title}</h3>
+                <p>${video.description}</p>
+                <button onclick="descargarVideo('${video.src}', '${video.title.replace(/\s+/g, '_')}.mp4')" class="download-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Descargar Video
+                </button>
+            </div>
+        `;
+        
+        grid.appendChild(videoItem);
+    });
+    
+    // Agregar eventos para preview de videos
+    grid.querySelectorAll('.video-preview').forEach(preview => {
+        const video = preview.querySelector('video');
+        const overlay = preview.querySelector('.video-overlay');
+        
+        preview.addEventListener('mouseenter', function() {
+            reproducirPreview(video);
+        });
+        
+        preview.addEventListener('mouseleave', function() {
+            pausarPreview(video);
+        });
+        
+        overlay.addEventListener('click', function() {
+            const videoSrc = video.src;
+            const modal = document.getElementById('modal');
+            const modalVideo = document.getElementById('modal-video');
+
+            modal.style.display = "block";
+            modalVideo.src = videoSrc;
+            modalVideo.play();
+        });
+    });
+}
+
 // Función para reproducir preview de videos en la sección videos
 function reproducirPreview(video) {
     video.play();
@@ -174,4 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.animate-on-scroll').forEach(element => {
         observer.observe(element);
     });
+    
+    // Cargar videos de Emma
+    cargarVideosEmma();
 });
