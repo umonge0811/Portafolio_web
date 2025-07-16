@@ -113,7 +113,31 @@ function descargarVideo(videoUrl, nombreArchivo) {
 function cargarVideosEmma() {
     // Lista de videos de Emma (actualiza esta lista cuando agregues videos)
     const videosEmma = [
-        // Ejemplo: { src: '/assets/videos_emma/video1.mp4', title: 'Video Emma 1', description: 'Descripción del video' }
+        { 
+            src: '/assets/videos_emma/Aprende los colores en inglés ｜ Colors vocabulary [8VWfK4SleTs].mp4', 
+            title: 'Aprende los colores en inglés', 
+            description: 'Video educativo para aprender los colores en inglés' 
+        },
+        { 
+            src: '/assets/videos_emma/Episodio 1-26 ¡Todos los episodios! ｜ Barbie Dreamhouse Adventures ｜ @BarbieenCastellano [tEcCJp-MOQg].mp4', 
+            title: 'Barbie Dreamhouse Adventures', 
+            description: 'Episodios completos de Barbie Dreamhouse Adventures' 
+        },
+        { 
+            src: '/assets/videos_emma/Hawaiian Roller Coaster Ride (From ＂Lilo & Stitch＂) [3OM7oi79hd4].mp4', 
+            title: 'Hawaiian Roller Coaster Ride', 
+            description: 'Canción de Lilo & Stitch - Hawaiian Roller Coaster Ride' 
+        },
+        { 
+            src: '/assets/videos_emma/La Carrera Increíble ｜ @BarbieenCastellano [DhfD-Fzl2og].mp4', 
+            title: 'La Carrera Increíble - Barbie', 
+            description: 'Episodio de Barbie - La Carrera Increíble' 
+        },
+        { 
+            src: '/assets/videos_emma/Lilo & Stitch： The Series ＂Angel＂ Full Episode! 💙🩷 ｜ Lilo & Stitch ｜ @disneychannelanimation [kX4wbaMVt-4].mp4', 
+            title: 'Lilo & Stitch - Angel Episode', 
+            description: 'Episodio completo de Lilo & Stitch - Angel' 
+        }
     ];
     
     const grid = document.querySelector('#videos-emma .videos-grid');
