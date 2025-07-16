@@ -1,0 +1,94 @@
+    <!--SECCION VIDEOS-->
+    <section id="videos" class="videos">
+        <div class="content-seccion">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Videos</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn">Descarga los videos de mis proyectos</p>
+            
+            <div class="videos-grid animate-on-scroll" data-animation="animate__fadeInUp">
+                <div class="video-item">
+                    <div class="video-preview">
+                        <video src="/assets/videos/Blazor_Prov_Video.mp4" muted></video>
+                        <div class="video-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Sistema de Proveeduria - Blazor</h3>
+                        <p>Video demostrativo del sistema desarrollado en Blazor</p>
+                        <button onclick="descargarVideo('/assets/videos/Blazor_Prov_Video.mp4', 'Sistema_Proveeduria_Blazor.mp4')" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Descargar Video
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-preview">
+                        <video src="/assets/videos/Topotechnology.mp4" muted></video>
+                        <div class="video-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>TopoTechnology CR</h3>
+                        <p>Sitio web corporativo desarrollado con HTML, CSS y Bootstrap</p>
+                        <button onclick="descargarVideo('/assets/videos/Topotechnology.mp4', 'TopoTechnology_Website.mp4')" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Descargar Video
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-preview">
+                        <video src="/assets/videos/HTML_VentaTiq.mp4" muted></video>
+                        <div class="video-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Venta de Tickets</h3>
+                        <p>Página web para venta de tickets desarrollada con HTML, CSS y JavaScript</p>
+                        <button onclick="descargarVideo('/assets/videos/HTML_VentaTiq.mp4', 'VentaTiq_Website.mp4')" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Descargar Video
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-preview">
+                        <video src="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4" muted></video>
+                        <div class="video-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>H2O Pure - Sistema de Cobros</h3>
+                        <p>Aplicación WPF para cobros de recibos de agua desarrollada en C#</p>
+                        <button onclick="descargarVideo('/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4', 'H2OPure_Sistema_Cobros.mp4')" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Descargar Video
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-preview">
+                        <video src="/assets/videos/Blazor_Bib_Video.mp4" muted></video>
+                        <div class="video-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Sistema de Biblioteca - Blazor</h3>
+                        <p>Sistema de gestión de biblioteca desarrollado en Blazor</p>
+                        <button onclick="descargarVideo('/assets/videos/Blazor_Bib_Video.mp4', 'Sistema_Biblioteca_Blazor.mp4')" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                            Descargar Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
