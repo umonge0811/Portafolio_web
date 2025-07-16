@@ -157,13 +157,26 @@ function cargarVideosEmma() {
     
     const grid = document.querySelector('#videos-emma .videos-grid');
     
-    if (videosEmma.length === 0) {
-        // Mantener el mensaje de "Próximamente" si no hay videos
+    if (!grid) {
+        console.error('No se encontró el contenedor de videos de Emma');
         return;
     }
     
     // Limpiar el grid y agregar los videos
     grid.innerHTML = '';
+    
+    if (videosEmma.length === 0) {
+        // Mostrar mensaje si no hay videos
+        grid.innerHTML = `
+            <div class="video-item">
+                <div class="video-info" style="text-align: center; padding: 40px;">
+                    <h3>Próximamente</h3>
+                    <p>Los videos de Emma se mostrarán aquí una vez que sean subidos a la carpeta /assets/videos_emma/</p>
+                </div>
+            </div>
+        `;
+        return;
+    }
     
     videosEmma.forEach((video, index) => {
         const videoItem = document.createElement('div');
