@@ -1,0 +1,44 @@
+
+/* Responsive logos styles */
+.logo-responsive {
+    transition: transform 0.3s ease;
+}
+
+.logo-responsive:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness for logos */
+@media screen and (max-width: 768px) {
+    .logo-responsive {
+        max-height: 35px !important;
+        margin: 3px 5px !important;
+        max-width: 120px;
+        object-fit: contain;
+    }
+    
+    .d-flex.flex-wrap {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-responsive {
+        max-height: 30px !important;
+        margin: 2px 3px !important;
+        max-width: 100px;
+    }
+    
+    .d-flex.flex-wrap {
+        gap: 3px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo-responsive {
+        max-height: 25px !important;
+        margin: 2px !important;
+        max-width: 80px;
+    }
+}
