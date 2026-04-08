@@ -906,10 +906,12 @@ footer .redes  a:hover{
 .nav-portal {
     background: var(--color-primario);
     color: #fff !important;
-    padding: 6px 14px !important;
+    padding: 6px 16px !important;
     border-radius: 20px;
     font-weight: 700;
-    transition: background 0.3s;
+    white-space: nowrap;
+    font-size: 13px;
+    transition: background 0.3s, color 0.3s;
 }
 .nav-portal:hover {
     background: var(--color-turquesa) !important;
@@ -921,9 +923,9 @@ footer .redes  a:hover{
     margin-bottom: 20px;
 }
 .logo-hero {
-    width: 200px;
-    max-width: 80%;
-    filter: drop-shadow(0 0 20px rgba(3, 140, 140, 0.6));
+    width: 260px;
+    max-width: 85%;
+    filter: drop-shadow(0 0 24px rgba(19, 242, 242, 0.4));
 }
 .hero-cta {
     display: flex;
