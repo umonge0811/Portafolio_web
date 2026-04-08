@@ -32,12 +32,12 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">SOBRE MI</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">NOSOTROS</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">SERVICIOS</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">PORTFOLIO</a></li>
-                    <li><a href="#videos" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">VIDEOS</a></li>
-                    <li><a href="#videos-emma" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">VIDEOS EMMA</a></li>
-                    <li><a href="#skills" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">SKILLS</a></li>
+                    <li><a href="#tecnologias" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">TECNOLOGÍAS</a></li>
                     <li><a href="#contacto" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">CONTACTO</a></li>
+                    <li><a href="/portal/" onclick="seleccionar()" class="nav-portal animate-on-scroll" data-animation="animate__fadeIn">PORTAL CLIENTES</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -52,102 +52,154 @@
     <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
         <div class="content-banner">
-            <div class="container-img animate__animated" data-animation="animate__zoomIn">
-                <img src="/assets/img/ulises3.webp" alt="Ulises Monge Aguilar">
+            <div class="container-logo-hero animate__animated" data-animation="animate__zoomIn">
+                <img src="/assets/img/LOGO COLOR PRIMARIO 2_Mesa de trabajo 1 copia 3.png" alt="Ticodevcr Logo" class="logo-hero">
             </div>
-            <h1 class="animate__animated" data-animation="animate__bounceInDown">Ulises Monge Aguilar</h1>
-            <h2 class="animate__animated" data-animation="animate__fadeInLeft">Desarrollador de Software & Web</h2>
-            <h4 class="animate__animated" data-animation="animate__fadeInRight">Estudiante de Ingeniería en Sistemas</h4>
+            <h1 class="animate__animated" data-animation="animate__bounceInDown">Soluciones Digitales a la Medida</h1>
+            <h2 class="animate__animated" data-animation="animate__fadeInLeft">Desarrollo Web, Apps y Software Empresarial</h2>
+            <h4 class="animate__animated" data-animation="animate__fadeInRight">Costa Rica &bull; Ticodevcr</h4>
+            <div class="hero-cta animate__animated" data-animation="animate__bounceInUp">
+                <a href="#servicios" class="btn-primary">Ver Servicios <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contacto" class="btn-secondary">Contáctanos <i class="fa-solid fa-envelope"></i></a>
+            </div>
             <div class="redes animate__animated" data-animation="animate__bounceInUp">
-                <a href="https://github.com/umonge0811"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ulises-monge-aguilar-88a694222/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/umonge0811" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/50662828588" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:info@ticodevcr.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <!--SECCION SOBRE MI-->
+    <!--SECCION NOSOTROS-->
 
-    <section id="sobremi" class="sobremi">
+    <section id="nosotros" class="nosotros">
 
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Sobre Mí</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn">Hola, <span class="spam">Soy Ulises Monge</span> estudiante avanzado de Ingeniería en Sistemas con una sólida base en
-                el desarrollo de software y aplicaciones web. A través de la formación académica y proyectos personales,
-                he adquirido experiencia y práctica en tecnologías como C#, .NET, HTML, JavaScript, CSS, y Blazor entre
-                otras.
-                Complementando los estudios universitarios con cursos adicionales, busco estar siempre al día con las
-                últimas herramientas y tendencias del sector. Aunque la experiencia laboral formal es limitada, la
-                dedicación al aprendizaje y la aplicación de conocimientos en proyectos reales han fortalecido la
-                capacidad para enfrentar desafíos tecnológicos con seguridad y determinación. Siempre en busca de
-                oportunidades para crecer y aportar en un entorno profesional.
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Nosotros</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn">
+                En <span class="spam">Ticodevcr</span> somos un equipo de desarrolladores apasionados por la tecnología,
+                con sede en Costa Rica. Nos especializamos en crear soluciones digitales personalizadas: desde sitios web
+                corporativos y tiendas en línea, hasta sistemas empresariales complejos y aplicaciones a medida.
+                Nuestro compromiso es entender a fondo las necesidades de cada cliente para entregar productos de calidad,
+                funcionales y modernos, alineados con las últimas tendencias del desarrollo de software.
             </p>
 
-
             <div class="fila animate-on-scroll" data-animation="animate__fadeInUp">
-                <!--DATOS PERSONALES-->
-                <div class="col">
-                    <h3>Datos personales</h3>
-                    <div class="container-intereses">
-                        <div class="interes">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-
-                        <div class="interes">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-
-                        <div class="interes">
-                            <i class="fa-regular fa-map"></i>
-                        </div>
-
-                        <div class="interes">
-                            <i class="fa-solid fa-link"></i>
-                        </div>
+                <!--VALOR 1-->
+                <div class="col nosotros-valor">
+                    <div class="valor-icon">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-
+                    <h3>Experiencia</h3>
+                    <p>Proyectos reales en tecnologías modernas: C#, .NET, Blazor, JavaScript, Python y más.</p>
                 </div>
 
-                <!--INTERESES-->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="container-intereses">
-
-                        <div class="interes">
-                            <i class="fas fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fas fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fas fa-drum"></i>
-                            <span>BATERIA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fas fa-plane viajar-icon"></i>
-                            <span>VIAJAR</span>
-                        </div>
-
+                <!--VALOR 2-->
+                <div class="col nosotros-valor">
+                    <div class="valor-icon">
+                        <i class="fa-solid fa-handshake"></i>
                     </div>
+                    <h3>Compromiso</h3>
+                    <p>Acompañamos al cliente en cada etapa del proyecto, con comunicación clara y entregas puntuales.</p>
+                </div>
+
+                <!--VALOR 3-->
+                <div class="col nosotros-valor">
+                    <div class="valor-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovación</h3>
+                    <p>Adoptamos las herramientas y metodologías más actuales para construir productos robustos y escalables.</p>
                 </div>
             </div>
 
-            <button onclick="descargarCV()" class="animate-on-scroll" data-animation="animate__fadeIn">
-                Descargar CV
-                <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <div class="nosotros-stats animate-on-scroll" data-animation="animate__fadeInUp">
+                <div class="stat">
+                    <span class="stat-numero">5+</span>
+                    <span class="stat-label">Proyectos completados</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-numero">10+</span>
+                    <span class="stat-label">Tecnologías dominadas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-numero">100%</span>
+                    <span class="stat-label">Compromiso con el cliente</span>
+                </div>
+            </div>
 
         </div>
     </section>
 
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="content-seccion">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Servicios</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn">Ofrecemos soluciones tecnológicas adaptadas a las necesidades de tu negocio.</p>
+            <div class="servicios-grid animate-on-scroll" data-animation="animate__fadeInUp">
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web corporativos, landing pages, tiendas en línea y portales. Diseño moderno, responsivo y optimizado para buscadores.</p>
+                    <ul class="servicio-tech">
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Astro / React</li>
+                        <li>Bootstrap / Tailwind</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Aplicaciones Web</h3>
+                    <p>Aplicaciones web interactivas y progresivas (PWA) con interfaces modernas y experiencia de usuario de primer nivel.</p>
+                    <ul class="servicio-tech">
+                        <li>Blazor / .NET</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>APIs REST</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Software Empresarial</h3>
+                    <p>Sistemas personalizados para gestionar tu negocio: facturación, inventario, recursos humanos y más.</p>
+                    <ul class="servicio-tech">
+                        <li>C# / .NET / WPF</li>
+                        <li>SQL Server / SQLite</li>
+                        <li>Blazor / WinForms</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Sistemas de Gestión</h3>
+                    <p>CRM, ERP y portales de clientes a medida. Automatiza procesos, centraliza información y toma mejores decisiones.</p>
+                    <ul class="servicio-tech">
+                        <li>Bases de datos relacionales</li>
+                        <li>Paneles administrativos</li>
+                        <li>Reportes y estadísticas</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- SECCION PORTFOLIO -->
 
     <section id="portfolio" class="section-bento">
         <div class="content-seccion">
-            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInDown">Portfolio</h2>
+            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInDown">Nuestros Proyectos</h2>
             <div class="bento">
                 <div class="frame">
                     <div class="bento-box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
@@ -238,11 +290,11 @@
 
     </section>
 
-    <!--SECCION VIDEOS-->
-    <section id="videos" class="videos">
+    <!--SECCION DEMOS-->
+    <section id="demos" class="videos">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Videos</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn">Descarga los videos de mis proyectos</p>
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Demos de Proyectos</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn">Conoce nuestros proyectos en acción</p>
 
             <div class="videos-grid animate-on-scroll" data-animation="animate__fadeInUp">
                 <div class="video-item">
@@ -255,9 +307,9 @@
                     <div class="video-info">
                         <h3>Sistema de Proveeduria - Blazor</h3>
                         <p>Video demostrativo del sistema desarrollado en Blazor</p>
-                        <button onclick="descargarVideo('/assets/videos/Blazor_Prov_Video.mp4', 'Sistema_Proveeduria_Blazor.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
+                        <button onclick="abrirDemo('/assets/videos/Blazor_Prov_Video.mp4')" class="download-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Ver Demo
                         </button>
                     </div>
                 </div>
@@ -272,9 +324,9 @@
                     <div class="video-info">
                         <h3>TopoTechnology CR</h3>
                         <p>Sitio web corporativo desarrollado con HTML, CSS y Bootstrap</p>
-                        <button onclick="descargarVideo('/assets/videos/Topotechnology.mp4', 'TopoTechnology_Website.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
+                        <button onclick="abrirDemo('/assets/videos/Topotechnology.mp4')" class="download-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Ver Demo
                         </button>
                     </div>
                 </div>
@@ -289,9 +341,9 @@
                     <div class="video-info">
                         <h3>Venta de Tickets</h3>
                         <p>Página web para venta de tickets desarrollada con HTML, CSS y JavaScript</p>
-                        <button onclick="descargarVideo('/assets/videos/HTML_VentaTiq.mp4', 'VentaTiq_Website.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
+                        <button onclick="abrirDemo('/assets/videos/HTML_VentaTiq.mp4')" class="download-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Ver Demo
                         </button>
                     </div>
                 </div>
@@ -306,9 +358,9 @@
                     <div class="video-info">
                         <h3>H2O Pure - Sistema de Cobros</h3>
                         <p>Aplicación WPF para cobros de recibos de agua desarrollada en C#</p>
-                        <button onclick="descargarVideo('/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4', 'H2OPure_Sistema_Cobros.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
+                        <button onclick="abrirDemo('/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4')" class="download-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Ver Demo
                         </button>
                     </div>
                 </div>
@@ -323,9 +375,9 @@
                     <div class="video-info">
                         <h3>Sistema de Biblioteca - Blazor</h3>
                         <p>Sistema de gestión de biblioteca desarrollado en Blazor</p>
-                        <button onclick="descargarVideo('/assets/videos/Blazor_Bib_Video.mp4', 'Sistema_Biblioteca_Blazor.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
+                        <button onclick="abrirDemo('/assets/videos/Blazor_Bib_Video.mp4')" class="download-btn">
+                            <i class="fa-solid fa-play"></i>
+                            Ver Demo
                         </button>
                     </div>
                 </div>
@@ -333,126 +385,14 @@
         </div>
     </section>
 
-    <!--SECCION VIDEOS EMMA-->
-    <section id="videos-emma" class="videos">
-        <div class="content-seccion">
-            <h2>Videos Emma</h2>
-            <p>Descarga los videos de Emma</p>
 
-            <div class="videos-grid">
-                <div class="video-item">
-                    <div class="video-preview">
-                        <video src="/assets/videos_emma/Aprende los colores en inglés ｜ Colors vocabulary [8VWfK4SleTs].mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Aprende los colores en inglés</h3>
-                        <p>Video educativo para aprender los colores en inglés</p>
-                        <button onclick="descargarVideo('/assets/videos_emma/Aprende los colores en inglés ｜ Colors vocabulary [8VWfK4SleTs].mp4', 'Aprende_colores_ingles.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
-                        </button>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-preview">
-                        <video src="/assets/videos_emma/Episodio 1-26 ¡Todos los episodios! ｜ Barbie Dreamhouse Adventures ｜ @BarbieenCastellano [tEcCJp-MOQg].mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Barbie Dreamhouse Adventures - Episodios 1-26</h3>
-                        <p>Todos los episodios de Barbie Dreamhouse Adventures</p>
-                        <button onclick="descargarVideo('/assets/videos_emma/Episodio 1-26 ¡Todos los episodios! ｜ Barbie Dreamhouse Adventures ｜ @BarbieenCastellano [tEcCJp-MOQg].mp4', 'Barbie_Dreamhouse_Episodios_1-26.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
-                        </button>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-preview">
-                        <video src="/assets/videos_emma/Hawaiian Roller Coaster Ride (From ＂Lilo & Stitch＂) [3OM7oi79hd4].mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Hawaiian Roller Coaster Ride</h3>
-                        <p>Canción de Lilo & Stitch - Hawaiian Roller Coaster Ride</p>
-                        <button onclick="descargarVideo('/assets/videos_emma/Hawaiian Roller Coaster Ride (From ＂Lilo & Stitch＂) [3OM7oi79hd4].mp4', 'Hawaiian_Roller_Coaster_Ride.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
-                        </button>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-preview">
-                        <video src="/assets/videos_emma/La Carrera Increíble ｜ @BarbieenCastellano [DhfD-Fzl2og].mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>La Carrera Increíble - Barbie</h3>
-                        <p>Episodio de Barbie - La Carrera Increíble</p>
-                        <button onclick="descargarVideo('/assets/videos_emma/La Carrera Increíble ｜ @BarbieenCastellano [DhfD-Fzl2og].mp4', 'La_Carrera_Increible_Barbie.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
-                        </button>
-                    </div>
-                </div>
-
-                <div class="video-item">
-                    <div class="video-preview">
-                        <video src="/assets/videos_emma/Lilo & Stitch： The Series ＂Angel＂ Full Episode! 💙🩷 ｜ Lilo & Stitch ｜ @disneychannelanimation [kX4wbaMVt-4].mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Lilo & Stitch - Angel Episode</h3>
-                        <p>Episodio completo de Lilo & Stitch - Angel</p>
-                        <button onclick="descargarVideo('/assets/videos_emma/Lilo & Stitch： The Series ＂Angel＂ Full Episode! 💙🩷 ｜ Lilo & Stitch ｜ @disneychannelanimation [kX4wbaMVt-4].mp4', 'Lilo_Stitch_Angel_Episode.mp4')" class="download-btn">
-                            <i class="fa-solid fa-download"></i>
-                            Descargar Video
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-                <div class="video-item">
-                    <div class="video-preview">
-                        <video src="/assets/videos_emma/Lilo y Stitch (2025) 720p HDRip.mkv" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Lilo & Stitch - Película 2025</h3>
-                        <p>Película completa de Lilo & Stitch en HD 720p</p>
-                        <button onclick="window.open('ENLACE_DE_GOOGLE_DRIVE_AQUI', '_blank')" class="download-btn">
-                            <i class="fa-solid fa-share"></i>
-                            Ver en Google Drive
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!--SKILSS-->
-        <section id="skills" class="skills">
+        <!--TECNOLOGIAS-->
+        <section id="tecnologias" class="skills">
              <div class="content-seccion">
-                <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Skills</h2>
+                <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Tecnologías</h2>
                 <div class="fila">
-                    <!--SKILLS TECNICAS-->
-                    <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Lenguajes de Programación</h4>
+                    <!--LENGUAJES-->
+                    <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Lenguajes y Plataformas</h4>
                     <div class="col">
                         <div class="logos">
                             <div class="logos-slide">
@@ -474,7 +414,7 @@
 
                     </div>
                     <div class="filas">
-                        <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Frameworks y otros</h4>
+                        <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Frameworks y Herramientas</h4>
                         <div class="col">
                             <div class="logos2">
                                 <div class="logos2-slide">
@@ -537,17 +477,19 @@
                         <ul>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-location-dot"></i>
-                                Costa Rica, Limón Guapiles, Buenos Aires
+                                Costa Rica
                             </li>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
-
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamame al: +506 6282-8588
+                                Escríbenos al: +506 6282-8588
                             </li>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-envelope"></i>
-
-                                Escribeme al Email: umongegds@gmail.com
+                                info@ticodevcr.com
+                            </li>
+                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <a href="https://wa.me/50662828588" target="_blank" style="color:inherit">WhatsApp disponible</a>
                             </li>
                         </ul>
                     </div>
@@ -565,16 +507,19 @@
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
-
         </a>
 
-        <div class="redes">
-            <a href="https://www.facebook.com/umonge08/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://x.com/umonge08"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/ulises-monge-aguilar-88a694222/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://wa.me/50662828588"><i class="fa-brands fa-whatsapp"></i></a>
-
+        <div class="footer-brand">
+            <img src="/assets/img/LOGO COLOR PRIMARIO 2_Mesa de trabajo 1 copia 3.png" alt="Ticodevcr" class="footer-logo">
         </div>
+
+        <div class="redes">
+            <a href="https://github.com/umonge0811" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/50662828588" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@ticodevcr.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 Ticodevcr. Todos los derechos reservados. | Costa Rica</p>
     </footer>
 
 
