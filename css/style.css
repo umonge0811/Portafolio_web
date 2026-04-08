@@ -1,9 +1,15 @@
 :root {
-    --color-primario: #038C8C; /* Código de color en formato hexadecimal */
+    /* Paleta oficial Ticodevcr */
+    --color-primario: #038C8C;       /* Verde Azulado — botones, íconos, acentos */
+    --color-azul-marino: #111D40;    /* Azul Marino — fondos secciones principales */
+    --color-azul-oscuro: #0B1726;    /* Azul Oscuro — fondos body y secciones alternas */
+    --color-blanco: #F2F2F2;         /* Blanco — texto sobre fondos oscuros */
+    --color-verde-lima: #B8E986;     /* Verde Lima — badges, detalles secundarios */
+    --color-turquesa: #13F2F2;       /* Turquesa — hovers dinámicos y detalles llamativos */
 
-    --font-titulo: 'Montserrat', sans-serif; /* Fuente para títulos y encabezados */
-    --font-cuerpo: 'Avenir Next', sans-serif; /* Fuente para cuerpos de texto */
-    --font-subtitulo: 'Poppins', sans-serif; /* Fuente para subtítulos y textos destacados */
+    --font-titulo: 'Montserrat', sans-serif;
+    --font-cuerpo: 'Avenir Next', sans-serif;
+    --font-subtitulo: 'Poppins', sans-serif;
 }
 .animate-on-scroll {
     opacity: 0; /* Opcional: o visibility: hidden */
@@ -22,7 +28,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(30, 35, 38, .9), rgba(30, 35, 38, .9)),
+    background: linear-gradient(rgba(11, 23, 38, .95), rgba(11, 23, 38, .95)),
         url(/assets/img/v627-aew-47-technologybackground.webp);
     background-size: cover;
 }
@@ -36,7 +42,7 @@ html {
 
 /* Ajustes generales para el header */
 .container-header {
-    background: rgba(30, 35, 38, 0.2);
+    background: rgba(17, 29, 64, 0.45);
     -webkit-backdrop-filter: blur(11px);
     backdrop-filter: blur(11px);
     position: fixed;
@@ -108,7 +114,7 @@ html {
 /*SECCION DE INICIO*/
 
 .inicio {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    background: linear-gradient(to top, rgba(11, 23, 38, .85), rgba(11, 23, 38, 1)),
         url(/assets/img/fondo.webp);
     background-size: cover;
     height: 100vh;
@@ -119,7 +125,7 @@ html {
 
 .inicio .content-banner {
     padding: 20px;
-    background: rgba(37, 42, 46, 0.3);
+    background: rgba(17, 29, 64, 0.3);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border: 1px solid var(--color-primario);
@@ -185,7 +191,7 @@ html {
 /*SOBRE MI*/
 
 .sobremi {
-    background-color: #1e2326;
+    background-color: var(--color-azul-oscuro);
     color: #f2f2f2;
     padding: 50px 20px;
     box-shadow: 0px 0.5px 10px 4px #045c4a;
@@ -286,7 +292,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #252A2E;
+    background-color: var(--color-azul-marino);
     border-radius: 10px;
     transition: .3s;
 }
@@ -428,27 +434,27 @@ html {
 
 .logos:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);    
+    background: linear-gradient(to left, rgba(255,255,255,0),var(--color-azul-oscuro));    
 }
 
 .logos:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);    
+    background: linear-gradient(to right, rgba(255,255,255,0),var(--color-azul-oscuro));    
 }
 
 .logos2:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0),#1e2326);    
+    background: linear-gradient(to left, rgba(255,255,255,0),var(--color-azul-oscuro));    
 }
 
 .logos2:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0),#1e2326);    
+    background: linear-gradient(to right, rgba(255,255,255,0),var(--color-azul-oscuro));    
 }
 
 /* SECCION VIDEOS */
 .videos {
-    background-color: #1e2326;
+    background-color: var(--color-azul-oscuro);
     color: #f2f2f2;
     padding: 50px 20px;
     box-shadow: 0px 0.5px 10px 4px #045c4a;
@@ -482,7 +488,7 @@ html {
 }
 
 .video-item {
-    background-color: #252A2E;
+    background-color: var(--color-azul-marino);
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -641,7 +647,7 @@ html {
         position:absolute;
         right: 0;
         top: 75px;
-        background-color: #252A2E;
+        background-color: var(--color-azul-marino);
         width: 100vw;
         
     }
@@ -660,7 +666,7 @@ html {
 /*SECCION CONTACTO*/
 
 .contacto{
-    background-color: #1e2326;
+    background-color: var(--color-azul-oscuro);
     color: #fff;
     padding: 50px 20px;
     box-shadow: 0px 0.5px 10px 4px #045c4a;
@@ -698,7 +704,7 @@ html {
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
+    background-color: var(--color-azul-marino);
     color: #fff;
     font-size: 18px;    
 }
@@ -740,7 +746,7 @@ html {
 .contacto .col .info{
     position: absolute;
     top: 40%;
-    background-color: #252A2E;
+    background-color: var(--color-azul-marino);
     padding: 20px;
     max-width: 350px;
     left: 50%;
@@ -762,7 +768,7 @@ html {
 }
 
 footer{
-    background-color: #252A2E;
+    background-color: var(--color-azul-marino);
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -903,7 +909,8 @@ footer .redes  a:hover{
     transition: background 0.3s;
 }
 .nav-portal:hover {
-    background: #026b6b !important;
+    background: var(--color-turquesa) !important;
+    color: var(--color-azul-oscuro) !important;
 }
 
 /* --- HERO EMPRESA --- */
@@ -937,8 +944,10 @@ footer .redes  a:hover{
     gap: 8px;
 }
 .btn-primary:hover {
-    background: #026b6b;
+    background: var(--color-turquesa);
+    color: var(--color-azul-oscuro);
     transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(19, 242, 242, 0.3);
 }
 .btn-secondary {
     background: transparent;
@@ -963,7 +972,7 @@ footer .redes  a:hover{
 
 /* --- SECCION NOSOTROS --- */
 .nosotros {
-    background-color: #1e2326;
+    background-color: var(--color-azul-marino);
     padding: 80px 20px;
 }
 .nosotros .content-seccion {
@@ -992,7 +1001,8 @@ footer .redes  a:hover{
 }
 .nosotros-valor:hover {
     transform: translateY(-6px);
-    border-color: var(--color-primario);
+    border-color: var(--color-turquesa);
+    box-shadow: 0 6px 24px rgba(19,242,242,0.1);
 }
 .valor-icon {
     font-size: 2.5rem;
@@ -1037,7 +1047,7 @@ footer .redes  a:hover{
 
 /* --- SECCION SERVICIOS --- */
 .servicios {
-    background-color: #252A2E;
+    background-color: var(--color-azul-marino);
     padding: 80px 20px;
 }
 .servicios .content-seccion {
@@ -1067,8 +1077,8 @@ footer .redes  a:hover{
 }
 .servicio-card:hover {
     transform: translateY(-8px);
-    border-color: var(--color-primario);
-    box-shadow: 0 8px 30px rgba(3,140,140,0.2);
+    border-color: var(--color-turquesa);
+    box-shadow: 0 8px 30px rgba(19,242,242,0.15);
 }
 .servicio-icon {
     font-size: 2.2rem;
