@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/css/styleCarousel.css">
     <link rel="stylesheet" href="/css/bento.css">
     <script src="/modal.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/i18n.js"></script>
     <script src="/js_scritp.js"></script>
 </head>
 
@@ -31,13 +33,14 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">INICIO</a></li>
-                    <li><a href="#nosotros" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">NOSOTROS</a></li>
-                    <li><a href="#servicios" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">SERVICIOS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">PORTFOLIO</a></li>
-                    <li><a href="#tecnologias" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">TECNOLOGÍAS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn">CONTACTO</a></li>
-                    <li><a href="/portal/" onclick="seleccionar()" class="nav-portal animate-on-scroll" data-animation="animate__fadeIn">PORTAL CLIENTES</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.inicio">INICIO</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.nosotros">NOSOTROS</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.servicios">SERVICIOS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.portfolio">PORTFOLIO</a></li>
+                    <li><a href="#tecnologias" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.tecnologias">TECNOLOGÍAS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.contacto">CONTACTO</a></li>
+                    <li><a href="/portal/" onclick="seleccionar()" class="nav-portal animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.portal">PORTAL CLIENTES</a></li>
+                    <li><button id="lang-toggle" class="lang-toggle" onclick="I18N.toggle()">EN</button></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -55,12 +58,12 @@
             <div class="container-logo-hero animate__animated" data-animation="animate__zoomIn">
                 <img src="/assets/marca/LOGO/PNG LOGO COLOR PRIMARIO/LOGO COLOR PRINCIPAL_Mesa de trabajo 1.png" alt="Ticodevcr Logo" class="logo-hero">
             </div>
-            <h1 class="animate__animated" data-animation="animate__bounceInDown">Soluciones Digitales a la Medida</h1>
-            <h2 class="animate__animated" data-animation="animate__fadeInLeft">Desarrollo Web, Apps y Software Empresarial</h2>
-            <h4 class="animate__animated" data-animation="animate__fadeInRight">Costa Rica &bull; Ticodevcr</h4>
+            <h1 class="animate__animated" data-animation="animate__bounceInDown" data-i18n="hero.h1">Soluciones Digitales a la Medida</h1>
+            <h2 class="animate__animated" data-animation="animate__fadeInLeft" data-i18n="hero.h2">Desarrollo Web, Apps y Software Empresarial</h2>
+            <h4 class="animate__animated" data-animation="animate__fadeInRight" data-i18n="hero.h4">Costa Rica &bull; Ticodevcr</h4>
             <div class="hero-cta animate__animated" data-animation="animate__bounceInUp">
-                <a href="#servicios" class="btn-primary">Ver Servicios <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#contacto" class="btn-secondary">Contáctanos <i class="fa-solid fa-envelope"></i></a>
+                <a href="#servicios" class="btn-primary"><span data-i18n="hero.btn-servicios">Ver Servicios</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contacto" class="btn-secondary"><span data-i18n="hero.btn-contacto">Contáctanos</span> <i class="fa-solid fa-envelope"></i></a>
             </div>
             <div class="redes animate__animated" data-animation="animate__bounceInUp">
                 <a href="https://github.com/umonge0811" title="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -75,8 +78,8 @@
     <section id="nosotros" class="nosotros">
 
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Nosotros</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="nosotros.titulo">Nosotros</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n-html="nosotros.parrafo">
                 En <span class="spam">Ticodevcr</span> somos un equipo de desarrolladores apasionados por la tecnología,
                 con sede en Costa Rica. Nos especializamos en crear soluciones digitales personalizadas: desde sitios web
                 corporativos y tiendas en línea, hasta sistemas empresariales complejos y aplicaciones a medida.
@@ -87,44 +90,38 @@
             <div class="fila animate-on-scroll" data-animation="animate__fadeInUp">
                 <!--VALOR 1-->
                 <div class="col nosotros-valor">
-                    <div class="valor-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h3>Experiencia</h3>
-                    <p>Proyectos reales en tecnologías modernas: C#, .NET, Blazor, JavaScript, Python y más.</p>
+                    <div class="valor-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3 data-i18n="nosotros.val1.titulo">Experiencia</h3>
+                    <p data-i18n="nosotros.val1.desc">Proyectos reales en tecnologías modernas: C#, .NET, Blazor, JavaScript, Python y más.</p>
                 </div>
 
                 <!--VALOR 2-->
                 <div class="col nosotros-valor">
-                    <div class="valor-icon">
-                        <i class="fa-solid fa-handshake"></i>
-                    </div>
-                    <h3>Compromiso</h3>
-                    <p>Acompañamos al cliente en cada etapa del proyecto, con comunicación clara y entregas puntuales.</p>
+                    <div class="valor-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3 data-i18n="nosotros.val2.titulo">Compromiso</h3>
+                    <p data-i18n="nosotros.val2.desc">Acompañamos al cliente en cada etapa del proyecto, con comunicación clara y entregas puntuales.</p>
                 </div>
 
                 <!--VALOR 3-->
                 <div class="col nosotros-valor">
-                    <div class="valor-icon">
-                        <i class="fa-solid fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovación</h3>
-                    <p>Adoptamos las herramientas y metodologías más actuales para construir productos robustos y escalables.</p>
+                    <div class="valor-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3 data-i18n="nosotros.val3.titulo">Innovación</h3>
+                    <p data-i18n="nosotros.val3.desc">Adoptamos las herramientas y metodologías más actuales para construir productos robustos y escalables.</p>
                 </div>
             </div>
 
             <div class="nosotros-stats animate-on-scroll" data-animation="animate__fadeInUp">
                 <div class="stat">
                     <span class="stat-numero">5+</span>
-                    <span class="stat-label">Proyectos completados</span>
+                    <span class="stat-label" data-i18n="nosotros.stat1">Proyectos completados</span>
                 </div>
                 <div class="stat">
                     <span class="stat-numero">10+</span>
-                    <span class="stat-label">Tecnologías dominadas</span>
+                    <span class="stat-label" data-i18n="nosotros.stat2">Tecnologías dominadas</span>
                 </div>
                 <div class="stat">
                     <span class="stat-numero">100%</span>
-                    <span class="stat-label">Compromiso con el cliente</span>
+                    <span class="stat-label" data-i18n="nosotros.stat3">Compromiso con el cliente</span>
                 </div>
             </div>
 
@@ -135,16 +132,14 @@
     <!-- SECCION SERVICIOS -->
     <section id="servicios" class="servicios">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Servicios</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn">Ofrecemos soluciones tecnológicas adaptadas a las necesidades de tu negocio.</p>
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="servicios.titulo">Servicios</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="servicios.subtitulo">Ofrecemos soluciones tecnológicas adaptadas a las necesidades de tu negocio.</p>
             <div class="servicios-grid animate-on-scroll" data-animation="animate__fadeInUp">
 
                 <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <h3>Desarrollo Web</h3>
-                    <p>Sitios web corporativos, landing pages, tiendas en línea y portales. Diseño moderno, responsivo y optimizado para buscadores.</p>
+                    <div class="servicio-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3 data-i18n="servicios.web.titulo">Desarrollo Web</h3>
+                    <p data-i18n="servicios.web.desc">Sitios web corporativos, landing pages, tiendas en línea y portales. Diseño moderno, responsivo y optimizado para buscadores.</p>
                     <ul class="servicio-tech">
                         <li>HTML / CSS / JavaScript</li>
                         <li>Astro / React</li>
@@ -153,11 +148,9 @@
                 </div>
 
                 <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fa-solid fa-mobile-screen"></i>
-                    </div>
-                    <h3>Aplicaciones Web</h3>
-                    <p>Aplicaciones web interactivas y progresivas (PWA) con interfaces modernas y experiencia de usuario de primer nivel.</p>
+                    <div class="servicio-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3 data-i18n="servicios.apps.titulo">Aplicaciones Web</h3>
+                    <p data-i18n="servicios.apps.desc">Aplicaciones web interactivas y progresivas (PWA) con interfaces modernas y experiencia de usuario de primer nivel.</p>
                     <ul class="servicio-tech">
                         <li>Blazor / .NET</li>
                         <li>JavaScript / TypeScript</li>
@@ -166,11 +159,9 @@
                 </div>
 
                 <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fa-solid fa-gears"></i>
-                    </div>
-                    <h3>Software Empresarial</h3>
-                    <p>Sistemas personalizados para gestionar tu negocio: facturación, inventario, recursos humanos y más.</p>
+                    <div class="servicio-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3 data-i18n="servicios.software.titulo">Software Empresarial</h3>
+                    <p data-i18n="servicios.software.desc">Sistemas personalizados para gestionar tu negocio: facturación, inventario, recursos humanos y más.</p>
                     <ul class="servicio-tech">
                         <li>C# / .NET / WPF</li>
                         <li>SQL Server / SQLite</li>
@@ -182,8 +173,8 @@
                     <div class="servicio-icon">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3>Sistemas de Gestión</h3>
-                    <p>CRM, ERP y portales de clientes a medida. Automatiza procesos, centraliza información y toma mejores decisiones.</p>
+                    <h3 data-i18n="servicios.gestion.titulo">Sistemas de Gestión</h3>
+                    <p data-i18n="servicios.gestion.desc">CRM, ERP y portales de clientes a medida. Automatiza procesos, centraliza información y toma mejores decisiones.</p>
                     <ul class="servicio-tech">
                         <li>Bases de datos relacionales</li>
                         <li>Paneles administrativos</li>
@@ -199,7 +190,7 @@
 
     <section id="portfolio" class="section-bento">
         <div class="content-seccion">
-            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInDown">Nuestros Proyectos</h2>
+            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="portfolio.titulo">Nuestros Proyectos</h2>
             <div class="bento">
                 <div class="frame">
                     <div class="bento-box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
@@ -293,8 +284,8 @@
     <!--SECCION DEMOS-->
     <section id="demos" class="videos">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Demos de Proyectos</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn">Conoce nuestros proyectos en acción</p>
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="demos.titulo">Demos de Proyectos</h2>
+            <p class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="demos.subtitulo">Conoce nuestros proyectos en acción</p>
 
             <div class="videos-grid">
                 <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0s">
@@ -305,11 +296,10 @@
                         </div>
                     </div>
                     <div class="video-info">
-                        <h3>Sistema de Proveeduria - Blazor</h3>
-                        <p>Video demostrativo del sistema desarrollado en Blazor</p>
+                        <h3 data-i18n="demos.p1.titulo">Sistema de Proveeduria - Blazor</h3>
+                        <p data-i18n="demos.p1.desc">Video demostrativo del sistema desarrollado en Blazor</p>
                         <button onclick="abrirDemo('/assets/videos/Blazor_Prov_Video.mp4')" class="download-btn">
-                            <i class="fa-solid fa-play"></i>
-                            Ver Demo
+                            <i class="fa-solid fa-play"></i> <span data-i18n="demos.btn">Ver Demo</span>
                         </button>
                     </div>
                 </div>
@@ -317,16 +307,13 @@
                 <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.1s">
                     <div class="video-preview">
                         <video src="/assets/videos/Topotechnology.mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <div class="video-info">
-                        <h3>TopoTechnology CR</h3>
-                        <p>Sitio web corporativo desarrollado con HTML, CSS y Bootstrap</p>
+                        <h3 data-i18n="demos.p2.titulo">TopoTechnology CR</h3>
+                        <p data-i18n="demos.p2.desc">Sitio web corporativo desarrollado con HTML, CSS y Bootstrap</p>
                         <button onclick="abrirDemo('/assets/videos/Topotechnology.mp4')" class="download-btn">
-                            <i class="fa-solid fa-play"></i>
-                            Ver Demo
+                            <i class="fa-solid fa-play"></i> <span data-i18n="demos.btn">Ver Demo</span>
                         </button>
                     </div>
                 </div>
@@ -334,16 +321,13 @@
                 <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.2s">
                     <div class="video-preview">
                         <video src="/assets/videos/HTML_VentaTiq.mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <div class="video-info">
-                        <h3>Venta de Tickets</h3>
-                        <p>Página web para venta de tickets desarrollada con HTML, CSS y JavaScript</p>
+                        <h3 data-i18n="demos.p3.titulo">Venta de Tickets</h3>
+                        <p data-i18n="demos.p3.desc">Página web para venta de tickets desarrollada con HTML, CSS y JavaScript</p>
                         <button onclick="abrirDemo('/assets/videos/HTML_VentaTiq.mp4')" class="download-btn">
-                            <i class="fa-solid fa-play"></i>
-                            Ver Demo
+                            <i class="fa-solid fa-play"></i> <span data-i18n="demos.btn">Ver Demo</span>
                         </button>
                     </div>
                 </div>
@@ -351,16 +335,13 @@
                 <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.3s">
                     <div class="video-preview">
                         <video src="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <div class="video-info">
-                        <h3>H2O Pure - Sistema de Cobros</h3>
-                        <p>Aplicación WPF para cobros de recibos de agua desarrollada en C#</p>
+                        <h3 data-i18n="demos.p4.titulo">H2O Pure - Sistema de Cobros</h3>
+                        <p data-i18n="demos.p4.desc">Aplicación WPF para cobros de recibos de agua desarrollada en C#</p>
                         <button onclick="abrirDemo('/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4')" class="download-btn">
-                            <i class="fa-solid fa-play"></i>
-                            Ver Demo
+                            <i class="fa-solid fa-play"></i> <span data-i18n="demos.btn">Ver Demo</span>
                         </button>
                     </div>
                 </div>
@@ -368,16 +349,13 @@
                 <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.4s">
                     <div class="video-preview">
                         <video src="/assets/videos/Blazor_Bib_Video.mp4" muted></video>
-                        <div class="video-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
+                        <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
                     </div>
                     <div class="video-info">
-                        <h3>Sistema de Biblioteca - Blazor</h3>
-                        <p>Sistema de gestión de biblioteca desarrollado en Blazor</p>
+                        <h3 data-i18n="demos.p5.titulo">Sistema de Biblioteca - Blazor</h3>
+                        <p data-i18n="demos.p5.desc">Sistema de gestión de biblioteca desarrollado en Blazor</p>
                         <button onclick="abrirDemo('/assets/videos/Blazor_Bib_Video.mp4')" class="download-btn">
-                            <i class="fa-solid fa-play"></i>
-                            Ver Demo
+                            <i class="fa-solid fa-play"></i> <span data-i18n="demos.btn">Ver Demo</span>
                         </button>
                     </div>
                 </div>
@@ -389,10 +367,10 @@
         <!--TECNOLOGIAS-->
         <section id="tecnologias" class="skills">
              <div class="content-seccion">
-                <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">Tecnologías</h2>
+                <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="tech.titulo">Tecnologías</h2>
                 <div class="fila">
                     <!--LENGUAJES-->
-                    <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Lenguajes y Plataformas</h4>
+                    <h4 class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="tech.lenguajes">Lenguajes y Plataformas</h4>
                     <div class="col">
                         <div class="logos">
                             <div class="logos-slide">
@@ -414,7 +392,7 @@
 
                     </div>
                     <div class="filas">
-                        <h4 class="animate-on-scroll" data-animation="animate__fadeIn">Frameworks y Herramientas</h4>
+                        <h4 class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="tech.frameworks">Frameworks y Herramientas</h4>
                         <div class="col">
                             <div class="logos2">
                                 <div class="logos2-slide">
@@ -448,18 +426,18 @@
 
     <section id="contacto" class="contacto">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown">CONTACTO</h2>
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="contacto.titulo">CONTACTO</h2>
             <div class="fila">
                 <!--FORMULARIO-->
                 <div class="col">
                     <form id="contactForm" action="https://formspree.io/f/xanwkdgd" method="POST">
-                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                        <input type="tel" name="telefono" placeholder="Número telefónico" required>
-                        <input type="email" name="email" placeholder="Dirección de correo" required>
-                        <input type="text" name="tema" placeholder="Tema" required>
-                        <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+                        <input type="text" name="nombre" placeholder="Tu Nombre" required data-i18n-ph="contacto.ph-nombre">
+                        <input type="tel" name="telefono" placeholder="Número telefónico" required data-i18n-ph="contacto.ph-tel">
+                        <input type="email" name="email" placeholder="Dirección de correo" required data-i18n-ph="contacto.ph-email">
+                        <input type="text" name="tema" placeholder="Tema" required data-i18n-ph="contacto.ph-tema">
+                        <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required data-i18n-ph="contacto.ph-msg"></textarea>
                         <button type="submit" class="animate-on-scroll" data-animation="animate__fadeIn">
-                            Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+                            <span data-i18n="contacto.btn">Enviar Mensaje</span> <i class="fa-regular fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
                     </form>
@@ -477,19 +455,19 @@
                         <ul>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-location-dot"></i>
-                                Costa Rica
+                                <span data-i18n="contacto.loc">Costa Rica</span>
                             </li>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Escríbenos al: +506 6282-8588
+                                <span data-i18n="contacto.tel">Escríbenos al: +506 6282-8588</span>
                             </li>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-solid fa-envelope"></i>
-                                info@ticodevcr.com
+                                <span data-i18n="contacto.email">info@ticodevcr.com</span>
                             </li>
                             <li class="animate-on-scroll" data-animation="animate__fadeIn">
                                 <i class="fa-brands fa-whatsapp"></i>
-                                <a href="https://wa.me/50662828588" target="_blank" style="color:inherit">WhatsApp disponible</a>
+                                <a href="https://wa.me/50662828588" target="_blank" style="color:inherit" data-i18n="contacto.whatsapp">WhatsApp disponible</a>
                             </li>
                         </ul>
                     </div>
@@ -519,7 +497,7 @@
             <a href="mailto:info@ticodevcr.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
 
-        <p class="footer-copy">&copy; 2025 Ticodevcr. Todos los derechos reservados. | Costa Rica</p>
+        <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Ticodevcr. Todos los derechos reservados. | Costa Rica</p>
     </footer>
 
 

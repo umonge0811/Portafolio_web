@@ -1178,3 +1178,23 @@ footer .redes  a:hover{
         grid-template-columns: 1fr;
     }
 }
+
+/* --- LANGUAGE TOGGLE --- */
+.lang-toggle {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-family: var(--font-subtitulo);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s, background 0.3s;
+    white-space: nowrap;
+}
+.lang-toggle:hover {
+    border-color: var(--color-turquesa);
+    color: var(--color-turquesa);
+}
