@@ -1,4 +1,11 @@
 {
+  "name": "ticodevcr-web",
+  "version": "1.0.0",
+  "description": "Sitio web oficial de Ticodevcr",
+  "scripts": {
+    "dev": "npx serve . --listen 3000",
+    "start": "npx serve . --listen 3000"
+  },
   "dependencies": {
     "bootstrap-icons": "^1.11.3"
   }
