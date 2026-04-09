@@ -131,8 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const observer = new IntersectionObserver(handleIntersection, {
         root: null,
-        rootMargin: "0px 0px 120px 0px", // dispara 120px antes de que el elemento entre al viewport
-        threshold: 0.05                   // solo necesita 5% visible para animar
+        rootMargin: "0px 0px 200px 0px", // dispara 200px antes de que el elemento entre al viewport
+        threshold: 0.02                   // solo necesita 2% visible para animar
     });
 
     document.querySelectorAll('.animate-on-scroll').forEach(element => {
