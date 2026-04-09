@@ -105,6 +105,12 @@ html {
 .container-header header nav ul li a:hover {
     color: var(--color-primario);
 }
+
+.container-header header nav ul li a.active {
+    color: var(--color-turquesa);
+    border-bottom: 2px solid var(--color-turquesa);
+    padding-bottom: 3px;
+}
 .nav-responsive {
     background-color: var(--color-primario);
     color: #fff;

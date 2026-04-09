@@ -1,4 +1,31 @@
 let menuVisible = false;
+
+// ── SCROLL SPY ──────────────────────────────────────────────
+function activarSeccionActual() {
+    const secciones = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('#nav a[href^="#"]');
+    const scrollY   = window.scrollY;
+    const offset    = 90; // altura del header + margen
+
+    let actual = '';
+
+    secciones.forEach(sec => {
+        if (scrollY >= sec.offsetTop - offset) {
+            actual = sec.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${actual}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', activarSeccionActual, { passive: true });
+document.addEventListener('DOMContentLoaded', activarSeccionActual);
+// ────────────────────────────────────────────────────────────
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
     if(menuVisible){
