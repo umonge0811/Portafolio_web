@@ -34,8 +34,8 @@ body {
 }
 
 html {
-    /*me permite deslizar cuando hago click en los links del menu*/
     scroll-behavior: smooth;
+    scroll-padding-top: 85px; /* Compensa el header fijo para que los títulos no queden debajo */
 }
 
 /*MENU*/
