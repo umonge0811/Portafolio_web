@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" href="/assets/img/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/img/favicon/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Avenir+Next:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -27,24 +26,24 @@
     <div class="container-header">
         <header>
             <div class="logo">
-                <a href="index.html" class="animate-on-scroll" data-animation="animate__fadeIn">
+                <a href="index.html" >
                     <img src="/assets/img/LOGO COLOR PRIMARIO 2_Mesa de trabajo 1 copia 3.png" alt="Logo" class="logo-img" />
                 </a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.inicio">INICIO</a></li>
-                    <li><a href="#nosotros" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.nosotros">NOSOTROS</a></li>
-                    <li><a href="#servicios" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.servicios">SERVICIOS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.portfolio">PORTFOLIO</a></li>
-                    <li><a href="#tecnologias" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.tecnologias">TECNOLOGÍAS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()" class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.contacto">CONTACTO</a></li>
-                    <li><a href="/portal/" onclick="seleccionar()" class="nav-portal animate-on-scroll" data-animation="animate__fadeIn" data-i18n="nav.portal">PORTAL CLIENTES</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()"  data-i18n="nav.inicio">INICIO</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()"  data-i18n="nav.nosotros">NOSOTROS</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()"  data-i18n="nav.servicios">SERVICIOS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()"  data-i18n="nav.portfolio">PORTFOLIO</a></li>
+                    <li><a href="#tecnologias" onclick="seleccionar()"  data-i18n="nav.tecnologias">TECNOLOGÍAS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()"  data-i18n="nav.contacto">CONTACTO</a></li>
+                    <li><a href="/portal/" onclick="seleccionar()" class="nav-portal" data-i18n="nav.portal">PORTAL CLIENTES</a></li>
                     <li><button id="lang-toggle" class="lang-toggle" onclick="I18N.toggle()">EN</button></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars animate-on-scroll" data-animation="animate__fadeIn"></i>
+                <i class="fa-solid fa-bars"></i>
             </div>
 
         </header>
@@ -55,17 +54,17 @@
     <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
         <div class="content-banner">
-            <div class="container-logo-hero animate__animated" data-animation="animate__zoomIn">
+            <div class="container-logo-hero">
                 <img src="/assets/marca/LOGO/PNG LOGO COLOR PRIMARIO/LOGO COLOR PRINCIPAL_Mesa de trabajo 1.png" alt="Ticodevcr Logo" class="logo-hero">
             </div>
-            <h1 class="animate__animated" data-animation="animate__bounceInDown" data-i18n="hero.h1">Soluciones Digitales a la Medida</h1>
-            <h2 class="animate__animated" data-animation="animate__fadeInLeft" data-i18n="hero.h2">Desarrollo Web, Apps y Software Empresarial</h2>
-            <h4 class="animate__animated" data-animation="animate__fadeInRight" data-i18n="hero.h4">Costa Rica &bull; Ticodevcr</h4>
-            <div class="hero-cta animate__animated" data-animation="animate__bounceInUp">
+            <h1  data-i18n="hero.h1">Soluciones Digitales a la Medida</h1>
+            <h2  data-i18n="hero.h2">Desarrollo Web, Apps y Software Empresarial</h2>
+            <h4  data-i18n="hero.h4">Costa Rica &bull; Ticodevcr</h4>
+            <div class="hero-cta">
                 <a href="#servicios" class="btn-primary"><span data-i18n="hero.btn-servicios">Ver Servicios</span> <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="#contacto" class="btn-secondary"><span data-i18n="hero.btn-contacto">Contáctanos</span> <i class="fa-solid fa-envelope"></i></a>
             </div>
-            <div class="redes animate__animated" data-animation="animate__bounceInUp">
+            <div class="redes">
                 <a href="https://github.com/umonge0811" title="GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://wa.me/50662828588" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="mailto:info@ticodevcr.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
@@ -78,8 +77,8 @@
     <section id="nosotros" class="nosotros">
 
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="nosotros.titulo">Nosotros</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n-html="nosotros.parrafo">
+            <h2  data-i18n="nosotros.titulo">Nosotros</h2>
+            <p  data-i18n-html="nosotros.parrafo">
                 En <span class="spam">Ticodevcr</span> somos un equipo de desarrolladores apasionados por la tecnología,
                 con sede en Costa Rica. Nos especializamos en crear soluciones digitales personalizadas: desde sitios web
                 corporativos y tiendas en línea, hasta sistemas empresariales complejos y aplicaciones a medida.
@@ -87,7 +86,7 @@
                 funcionales y modernos, alineados con las últimas tendencias del desarrollo de software.
             </p>
 
-            <div class="fila animate-on-scroll" data-animation="animate__fadeInUp">
+            <div class="fila">
                 <!--VALOR 1-->
                 <div class="col nosotros-valor">
                     <div class="valor-icon"><i class="fa-solid fa-code"></i></div>
@@ -110,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="nosotros-stats animate-on-scroll" data-animation="animate__fadeInUp">
+            <div class="nosotros-stats">
                 <div class="stat">
                     <span class="stat-numero">5+</span>
                     <span class="stat-label" data-i18n="nosotros.stat1">Proyectos completados</span>
@@ -132,9 +131,9 @@
     <!-- SECCION SERVICIOS -->
     <section id="servicios" class="servicios">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="servicios.titulo">Servicios</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="servicios.subtitulo">Ofrecemos soluciones tecnológicas adaptadas a las necesidades de tu negocio.</p>
-            <div class="servicios-grid animate-on-scroll" data-animation="animate__fadeInUp">
+            <h2  data-i18n="servicios.titulo">Servicios</h2>
+            <p  data-i18n="servicios.subtitulo">Ofrecemos soluciones tecnológicas adaptadas a las necesidades de tu negocio.</p>
+            <div class="servicios-grid">
 
                 <div class="servicio-card">
                     <div class="servicio-icon"><i class="fa-solid fa-globe"></i></div>
@@ -190,7 +189,7 @@
 
     <section id="portfolio" class="section-bento">
         <div class="content-seccion">
-            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="portfolio.titulo">Nuestros Proyectos</h2>
+            <h2 class="section-title" data-i18n="portfolio.titulo">Nuestros Proyectos</h2>
             <div class="bento">
                 <div class="frame">
                     <div class="bento-box video-box" data-video="/assets/videos/Blazor_Prov_Video.mp4">
@@ -284,11 +283,11 @@
     <!--SECCION DEMOS-->
     <section id="demos" class="videos">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="demos.titulo">Demos de Proyectos</h2>
-            <p class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="demos.subtitulo">Conoce nuestros proyectos en acción</p>
+            <h2  data-i18n="demos.titulo">Demos de Proyectos</h2>
+            <p  data-i18n="demos.subtitulo">Conoce nuestros proyectos en acción</p>
 
             <div class="videos-grid">
-                <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0s">
+                <div class="video-item">
                     <div class="video-preview">
                         <video src="/assets/videos/Blazor_Prov_Video.mp4" muted></video>
                         <div class="video-overlay">
@@ -304,7 +303,7 @@
                     </div>
                 </div>
 
-                <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.1s">
+                <div class="video-item">
                     <div class="video-preview">
                         <video src="/assets/videos/Topotechnology.mp4" muted></video>
                         <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
@@ -318,7 +317,7 @@
                     </div>
                 </div>
 
-                <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.2s">
+                <div class="video-item">
                     <div class="video-preview">
                         <video src="/assets/videos/HTML_VentaTiq.mp4" muted></video>
                         <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
@@ -332,7 +331,7 @@
                     </div>
                 </div>
 
-                <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.3s">
+                <div class="video-item">
                     <div class="video-preview">
                         <video src="/assets/videos/CSharp_WPF_SQLite_H2OPure.mp4" muted></video>
                         <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
@@ -346,7 +345,7 @@
                     </div>
                 </div>
 
-                <div class="video-item animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay:0.4s">
+                <div class="video-item">
                     <div class="video-preview">
                         <video src="/assets/videos/Blazor_Bib_Video.mp4" muted></video>
                         <div class="video-overlay"><i class="fa-solid fa-play"></i></div>
@@ -367,10 +366,10 @@
         <!--TECNOLOGIAS-->
         <section id="tecnologias" class="skills">
              <div class="content-seccion">
-                <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="tech.titulo">Tecnologías</h2>
+                <h2  data-i18n="tech.titulo">Tecnologías</h2>
                 <div class="fila">
                     <!--LENGUAJES-->
-                    <h4 class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="tech.lenguajes">Lenguajes y Plataformas</h4>
+                    <h4  data-i18n="tech.lenguajes">Lenguajes y Plataformas</h4>
                     <div class="col">
                         <div class="logos">
                             <div class="logos-slide">
@@ -392,7 +391,7 @@
 
                     </div>
                     <div class="filas">
-                        <h4 class="animate-on-scroll" data-animation="animate__fadeIn" data-i18n="tech.frameworks">Frameworks y Herramientas</h4>
+                        <h4  data-i18n="tech.frameworks">Frameworks y Herramientas</h4>
                         <div class="col">
                             <div class="logos2">
                                 <div class="logos2-slide">
@@ -426,7 +425,7 @@
 
     <section id="contacto" class="contacto">
         <div class="content-seccion">
-            <h2 class="animate-on-scroll" data-animation="animate__fadeInDown" data-i18n="contacto.titulo">CONTACTO</h2>
+            <h2  data-i18n="contacto.titulo">CONTACTO</h2>
             <div class="fila">
                 <!--FORMULARIO-->
                 <div class="col">
@@ -436,7 +435,7 @@
                         <input type="email" name="email" placeholder="Dirección de correo" required data-i18n-ph="contacto.ph-email">
                         <input type="text" name="tema" placeholder="Tema" required data-i18n-ph="contacto.ph-tema">
                         <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje" required data-i18n-ph="contacto.ph-msg"></textarea>
-                        <button type="submit" class="animate-on-scroll" data-animation="animate__fadeIn">
+                        <button type="submit" >
                             <span data-i18n="contacto.btn">Enviar Mensaje</span> <i class="fa-regular fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
@@ -453,19 +452,19 @@
 
                     <div class="info">
                         <ul>
-                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
+                            <li >
                                 <i class="fa-solid fa-location-dot"></i>
                                 <span data-i18n="contacto.loc">Costa Rica</span>
                             </li>
-                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
+                            <li >
                                 <i class="fa-solid fa-mobile-screen"></i>
                                 <span data-i18n="contacto.tel">Escríbenos al: +506 6282-8588</span>
                             </li>
-                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
+                            <li >
                                 <i class="fa-solid fa-envelope"></i>
                                 <span data-i18n="contacto.email">info@ticodevcr.com</span>
                             </li>
-                            <li class="animate-on-scroll" data-animation="animate__fadeIn">
+                            <li >
                                 <i class="fa-brands fa-whatsapp"></i>
                                 <a href="https://wa.me/50662828588" target="_blank" style="color:inherit" data-i18n="contacto.whatsapp">WhatsApp disponible</a>
                             </li>
@@ -510,39 +509,6 @@
         </div>
     </div>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(() => {
-            const animateElements = document.querySelectorAll('#inicio .animate__animated');
-            animateElements.forEach((element, index) => {
-                setTimeout(() => {
-                    element.classList.add(element.dataset.animation);
-                }, index * 200); // Retraso escalonado para cada elemento
-            });
-        }, 500); // Retraso inicial de 500ms
-
-        function handleIntersection(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const animationClass = entry.target.dataset.animation;
-                    entry.target.classList.add('animate__animated', animationClass);
-                } else {
-                    const animationClass = entry.target.dataset.animation;
-                    entry.target.classList.remove('animate__animated', animationClass);
-                }
-            });
-        }
-
-        const observer = new IntersectionObserver(handleIntersection, {
-            root: null,
-            threshold: 0.1 // Ajusta este valor según necesites
-        });
-
-        document.querySelectorAll('.animate-on-scroll').forEach(element => {
-            observer.observe(element);
-        });
-    });
-    </script>
 
 </body>
 

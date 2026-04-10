@@ -135,34 +135,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animaciones de entrada para el hero
-    setTimeout(() => {
-        const animateElements = document.querySelectorAll('#inicio .animate__animated');
-        animateElements.forEach((element, index) => {
-            setTimeout(() => {
-                element.classList.add(element.dataset.animation);
-            }, index * 200);
-        });
-    }, 500);
-
-    // Animaciones al hacer scroll
-    function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const animationClass = entry.target.dataset.animation;
-                entry.target.classList.add('animate__animated', animationClass);
-                observer.unobserve(entry.target);
-            }
-        });
-    }
-
-    const observer = new IntersectionObserver(handleIntersection, {
-        root: null,
-        rootMargin: "0px 0px 200px 0px", // dispara 200px antes de que el elemento entre al viewport
-        threshold: 0.02                   // solo necesita 2% visible para animar
-    });
-
-    document.querySelectorAll('.animate-on-scroll').forEach(element => {
-        observer.observe(element);
-    });
 });

@@ -11,14 +11,6 @@
     --font-cuerpo: 'Avenir Next', sans-serif;
     --font-subtitulo: 'Poppins', sans-serif;
 }
-.animate-on-scroll {
-    opacity: 0; /* Opcional: o visibility: hidden */
-}
-
-.animate__animated {
-    opacity: 1; /* Asegúrate de que la visibilidad se restaure al activar la animación */
-}
-
 
 * {
     box-sizing: border-box;
