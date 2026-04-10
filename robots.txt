@@ -1,0 +1,12 @@
+# robots.txt — Ticodevcr
+# https://ticodevcr.com
+
+User-agent: *
+Allow: /
+
+# Bloquear recursos internos innecesarios para crawlers
+Disallow: /node_modules/
+Disallow: /attached_assets/
+
+# Sitemap
+Sitemap: https://ticodevcr.com/sitemap.xml

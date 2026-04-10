@@ -1,23 +1,184 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ═══════════════════════════════════════════
+         SEO — PRIMARY META TAGS
+    ═══════════════════════════════════════════ -->
+    <title>Ticodevcr | Desarrollo Web y Software Empresarial · Costa Rica</title>
+    <meta name="title"       content="Ticodevcr | Desarrollo Web y Software Empresarial · Costa Rica">
+    <meta name="description" content="Desarrollo web, aplicaciones y software empresarial a la medida en Costa Rica. Sitios corporativos, CRM, ERP y apps personalizadas. Contáctenos: +506 6282-8588">
+    <meta name="keywords"    content="desarrollo web Costa Rica, software empresarial Costa Rica, aplicaciones web Costa Rica, CRM Costa Rica, ERP Costa Rica, Blazor .NET, sitios web corporativos, Ticodevcr, TicoDev">
+    <meta name="author"      content="Ticodevcr">
+    <meta name="robots"      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region"    content="CR">
+    <meta name="geo.placename" content="Costa Rica">
+    <meta name="theme-color"   content="#038C8C">
+    <link rel="canonical" href="https://ticodevcr.com/">
+
+    <!-- ═══════════════════════════════════════════
+         SEO — OPEN GRAPH (Facebook / LinkedIn / WhatsApp)
+    ═══════════════════════════════════════════ -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://ticodevcr.com/">
+    <meta property="og:site_name"   content="Ticodevcr">
+    <meta property="og:locale"      content="es_CR">
+    <meta property="og:title"       content="Ticodevcr | Desarrollo Web y Software Empresarial · Costa Rica">
+    <meta property="og:description" content="Desarrollo web, aplicaciones y software empresarial a la medida en Costa Rica. Sitios corporativos, CRM, ERP y apps personalizadas.">
+    <meta property="og:image"       content="https://ticodevcr.com/assets/img/og-image.jpg">
+    <meta property="og:image:width"  content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt"    content="Ticodevcr — Desarrollo Web y Software en Costa Rica">
+
+    <!-- ═══════════════════════════════════════════
+         SEO — TWITTER CARD
+    ═══════════════════════════════════════════ -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Ticodevcr | Desarrollo Web y Software Empresarial · Costa Rica">
+    <meta name="twitter:description" content="Desarrollo web, aplicaciones y software empresarial a la medida en Costa Rica. Sitios corporativos, CRM, ERP y apps personalizadas.">
+    <meta name="twitter:image"       content="https://ticodevcr.com/assets/img/og-image.jpg">
+    <meta name="twitter:image:alt"   content="Ticodevcr — Desarrollo Web y Software en Costa Rica">
+
+    <!-- ═══════════════════════════════════════════
+         PERFORMANCE — PRECONNECT / DNS PREFETCH
+    ═══════════════════════════════════════════ -->
+    <link rel="preconnect"    href="https://fonts.googleapis.com">
+    <link rel="preconnect"    href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch"  href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch"  href="https://formspree.io">
+
+    <!-- FAVICON -->
+    <link rel="icon"       href="/assets/img/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon-32x32.png">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="/assets/img/favicon/favicon-32x32.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Avenir+Next:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>Ticodevcr</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styleCarousel.css">
     <link rel="stylesheet" href="/css/bento.css">
+
+    <!-- SCRIPTS -->
     <script src="/modal.js"></script>
     <script src="/js/translations.js"></script>
     <script src="/js/i18n.js"></script>
     <script src="/js_scritp.js"></script>
+
+    <!-- ═══════════════════════════════════════════
+         SEO — STRUCTURED DATA (JSON-LD)
+    ═══════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ticodevcr.com/#organization",
+          "name": "Ticodevcr",
+          "alternateName": "TicoDev CR",
+          "url": "https://ticodevcr.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ticodevcr.com/assets/img/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+506-6282-8588",
+            "email": "info@ticodevcr.com",
+            "contactType": "customer service",
+            "areaServed": "CR",
+            "availableLanguage": ["Spanish", "English"]
+          },
+          "sameAs": [
+            "https://github.com/umonge0811",
+            "https://wa.me/50662828588"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://ticodevcr.com/#localbusiness",
+          "name": "Ticodevcr",
+          "description": "Empresa de desarrollo web, aplicaciones y software empresarial en Costa Rica. Especializados en sitios corporativos, sistemas a medida, CRM y ERP.",
+          "url": "https://ticodevcr.com",
+          "telephone": "+506-6282-8588",
+          "email": "info@ticodevcr.com",
+          "image": "https://ticodevcr.com/assets/img/og-image.jpg",
+          "priceRange": "$$",
+          "currenciesAccepted": "CRC, USD",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CR",
+            "addressRegion": "Costa Rica"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 10.1863,
+            "longitude": -83.7830
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Costa Rica"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Desarrollo de Software",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Desarrollo Web",
+                  "description": "Sitios web corporativos, landing pages, tiendas en línea y portales. Diseño moderno, responsivo y optimizado para buscadores."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Aplicaciones Web",
+                  "description": "Aplicaciones web interactivas y progresivas (PWA) con interfaces modernas."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Software Empresarial",
+                  "description": "Sistemas personalizados para gestionar tu negocio: facturación, inventario, recursos humanos y más."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Sistemas de Gestión CRM y ERP",
+                  "description": "CRM, ERP y portales de clientes a medida. Automatiza procesos y centraliza información."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ticodevcr.com/#website",
+          "url": "https://ticodevcr.com",
+          "name": "Ticodevcr",
+          "description": "Desarrollo Web y Software Empresarial en Costa Rica",
+          "publisher": { "@id": "https://ticodevcr.com/#organization" },
+          "inLanguage": ["es-CR", "en"]
+        }
+      ]
+    }
+    </script>
 </head>
 
 
