@@ -29,24 +29,21 @@ const COOKIES = {
 
     // ── Google Analytics 4 ──────────────────────────────────
     loadGA() {
-        // No carga si el ID sigue siendo el placeholder
         if (!this.GA_ID || this.GA_ID === 'G-XXXXXXXXXX') return;
         if (window._gaLoaded) return;
         window._gaLoaded = true;
 
+        // Configurar dataLayer y gtag en scope global ANTES de cargar el script
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function() { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', this.GA_ID, { anonymize_ip: true });
+
+        // Cargar el script de GA4 de forma asíncrona
         const s = document.createElement('script');
-        s.src = `https://www.googletagmanager.com/gtag/js?id=${this.GA_ID}`;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + this.GA_ID;
         s.async = true;
         document.head.appendChild(s);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', this.GA_ID, {
-            anonymize_ip: true,          // buenas prácticas de privacidad
-            cookie_flags: 'SameSite=None;Secure'
-        });
     },
 
     // ── Inicialización ──────────────────────────────────────
