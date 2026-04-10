@@ -12,7 +12,7 @@
 const COOKIES = {
 
     KEY:   'ticodev-cookies',
-    GA_ID: 'G-XXXXXXXXXX',   // ← reemplazar con tu Measurement ID de GA4
+    GA_ID: 'G-ZWH6QXGPR0',
 
     // ── Persistencia ────────────────────────────────────────
     get() {
