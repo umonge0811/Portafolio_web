@@ -58,6 +58,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- STYLES -->
+    <link rel="stylesheet" href="/css/cookies.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -70,6 +71,7 @@
     <script src="/js/translations.js"></script>
     <script src="/js/i18n.js"></script>
     <script src="/js_scritp.js"></script>
+    <script src="/js/cookies.js"></script>
 
     <!-- ═══════════════════════════════════════════
          SEO — STRUCTURED DATA (JSON-LD)
@@ -669,6 +671,72 @@
             <img id="modal-img" alt="Imagen del Proyecto">
         </div>
     </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         COOKIE CONSENT BANNER
+    ═══════════════════════════════════════════ -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+        <div class="cookie-inner">
+            <div class="cookie-text">
+                <strong data-i18n="cookies.title">Usamos cookies</strong>
+                <p data-i18n="cookies.desc">Utilizamos cookies propias y de terceros para analizar cómo usas el sitio y mejorar tu experiencia.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-reject"    onclick="COOKIES.rejectAll()"  data-i18n="cookies.reject">Rechazar</button>
+                <button class="cookie-btn cookie-customize" onclick="COOKIES.showModal()"  data-i18n="cookies.customize">Personalizar</button>
+                <button class="cookie-btn cookie-accept"    onclick="COOKIES.acceptAll()"  data-i18n="cookies.accept">Aceptar todo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         COOKIE CUSTOMIZE MODAL
+    ═══════════════════════════════════════════ -->
+    <div id="cookie-modal" class="cookie-modal" onclick="if(event.target===this)COOKIES.hideModal()">
+        <div class="cookie-modal-box" role="dialog" aria-modal="true" aria-labelledby="cookie-modal-title">
+            <button class="cookie-modal-close" onclick="COOKIES.hideModal()" aria-label="Cerrar">&times;</button>
+            <h3 id="cookie-modal-title" data-i18n="cookies.modal.title">Configuración de Cookies</h3>
+            <p class="cookie-modal-intro" data-i18n="cookies.modal.intro">Decide qué cookies deseas permitir. Puedes cambiar esto en cualquier momento.</p>
+
+            <!-- Categoría: Necesarias (siempre activas) -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div>
+                        <strong data-i18n="cookies.modal.nec.title">Necesarias</strong>
+                        <p data-i18n="cookies.modal.nec.desc">Imprescindibles para el funcionamiento del sitio. No se pueden desactivar.</p>
+                    </div>
+                    <label class="cookie-toggle" aria-label="Cookies necesarias (siempre activas)">
+                        <input type="checkbox" checked disabled>
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Categoría: Analíticas (Google Analytics) -->
+            <div class="cookie-category">
+                <div class="cookie-category-header">
+                    <div>
+                        <strong data-i18n="cookies.modal.analytics.title">Analíticas</strong>
+                        <p data-i18n="cookies.modal.analytics.desc">Google Analytics: nos ayudan a entender cómo se usa el sitio para mejorarlo.</p>
+                    </div>
+                    <label class="cookie-toggle" aria-label="Cookies analíticas">
+                        <input type="checkbox" id="toggle-analytics">
+                        <span class="cookie-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="cookie-btn cookie-accept cookie-modal-save" onclick="COOKIES.saveCustom()" data-i18n="cookies.modal.save">
+                Guardar preferencias
+            </button>
+        </div>
+    </div>
+
+    <!-- Botón para reabrir configuración de cookies -->
+    <button id="cookie-reopen" class="cookie-reopen" onclick="COOKIES.reopenSettings()" title="Configuración de cookies" aria-label="Configuración de cookies">
+        <i class="fa-solid fa-cookie-bite"></i>
+    </button>
 
 
 </body>

@@ -79,6 +79,21 @@ const translations = {
 
         // Footer
         'footer.copy': '© 2026 Ticodevcr. Todos los derechos reservados. | Costa Rica',
+
+        // Cookies
+        'cookies.title':   'Usamos cookies',
+        'cookies.desc':    'Utilizamos cookies propias y de terceros para analizar cómo usas el sitio y mejorar tu experiencia. Puedes aceptar todas, rechazarlas o personalizar tu elección.',
+        'cookies.privacy': 'Política de privacidad',
+        'cookies.reject':   'Rechazar',
+        'cookies.customize':'Personalizar',
+        'cookies.accept':   'Aceptar todo',
+        'cookies.modal.title':           'Configuración de Cookies',
+        'cookies.modal.intro':           'Decide qué cookies deseas permitir. Puedes cambiar esta configuración en cualquier momento.',
+        'cookies.modal.nec.title':       'Necesarias',
+        'cookies.modal.nec.desc':        'Imprescindibles para el funcionamiento del sitio (sesión, preferencias de idioma). No se pueden desactivar.',
+        'cookies.modal.analytics.title': 'Analíticas',
+        'cookies.modal.analytics.desc':  'Google Analytics: nos ayudan a entender cómo se usa el sitio para mejorarlo. No contienen datos personales identificables.',
+        'cookies.modal.save':            'Guardar preferencias',
     },
 
     en: {
@@ -161,5 +176,20 @@ const translations = {
 
         // Footer
         'footer.copy': '© 2026 Ticodevcr. All rights reserved. | Costa Rica',
+
+        // Cookies
+        'cookies.title':   'We use cookies',
+        'cookies.desc':    'We use our own and third-party cookies to analyze how you use our site and improve your experience. You can accept all, reject, or customize your choice.',
+        'cookies.privacy': 'Privacy policy',
+        'cookies.reject':   'Reject',
+        'cookies.customize':'Customize',
+        'cookies.accept':   'Accept all',
+        'cookies.modal.title':           'Cookie Settings',
+        'cookies.modal.intro':           'Decide which cookies you want to allow. You can change this setting at any time.',
+        'cookies.modal.nec.title':       'Necessary',
+        'cookies.modal.nec.desc':        'Essential for the site to function (session, language preferences). Cannot be disabled.',
+        'cookies.modal.analytics.title': 'Analytics',
+        'cookies.modal.analytics.desc':  'Google Analytics: helps us understand how the site is used to improve it. Contains no personally identifiable data.',
+        'cookies.modal.save':            'Save preferences',
     }
 };
