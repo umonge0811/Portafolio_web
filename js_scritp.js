@@ -135,4 +135,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // ── SCROLL REVEAL ─────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal, .reveal-heading, .reveal-scale');
+    if (revealEls.length) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -50px 0px', threshold: 0.08 });
+
+        revealEls.forEach(el => io.observe(el));
+    }
+    // ──────────────────────────────────────────────────────────
+
 });

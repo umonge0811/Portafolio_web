@@ -12,6 +12,82 @@
     --font-subtitulo: 'Poppins', sans-serif;
 }
 
+/* =============================================
+   ANIMACIONES MODERNAS — TICODEVCR
+   ============================================= */
+
+/* Keyframes */
+@keyframes tdc-fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes tdc-fadeDown {
+    from { opacity: 0; transform: translateY(-18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes tdc-scaleIn {
+    from { opacity: 0; transform: scale(0.93); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Hero: animación al cargar la página (CSS puro, sin JS) */
+.hero-anim {
+    opacity: 0;
+    animation: tdc-fadeUp 0.72s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.hero-d1 { animation-delay: 0.08s; }
+.hero-d2 { animation-delay: 0.24s; }
+.hero-d3 { animation-delay: 0.40s; }
+.hero-d4 { animation-delay: 0.56s; }
+.hero-d5 { animation-delay: 0.70s; }
+.hero-d6 { animation-delay: 0.84s; }
+
+/* Scroll reveal: estado inicial (invisible, sin layout shift) */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.reveal-heading {
+    opacity: 0;
+    transform: translateY(-16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.94);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+/* Estado visible (activado por IntersectionObserver) */
+.reveal.in-view,
+.reveal-heading.in-view,
+.reveal-scale.in-view {
+    opacity: 1;
+    transform: none;
+}
+
+/* Stagger delays para grids y listas */
+.d-1 { transition-delay: 0.10s; }
+.d-2 { transition-delay: 0.20s; }
+.d-3 { transition-delay: 0.30s; }
+.d-4 { transition-delay: 0.40s; }
+.d-5 { transition-delay: 0.50s; }
+
+/* Accesibilidad: desactiva animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+    .hero-anim,
+    .reveal,
+    .reveal-heading,
+    .reveal-scale {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
 * {
     box-sizing: border-box;
     font-family: var(--font-subtitulo);
