@@ -1,0 +1,36 @@
+Options -Indexes
+
+RewriteEngine On
+
+# ── 1. Forzar HTTPS ──────────────────────────────────────
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ── 2. Eliminar www (www → sin www) ──────────────────────
+RewriteCond %{HTTP_HOST} ^www\.ticodevcr\.com [NC]
+RewriteRule ^(.*)$ https://ticodevcr.com/$1 [R=301,L]
+
+# ── 3. Seguridad: ocultar archivos sensibles ─────────────
+<FilesMatch "\.(git|env|md|json|lock)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Permitir robots.txt y sitemap
+<Files "robots.txt">
+    Allow from all
+</Files>
+<Files "sitemap.xml">
+    Allow from all
+</Files>
+
+# ── 4. Caché del navegador ───────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp         "access plus 1 month"
+    ExpiresByType image/png          "access plus 1 month"
+    ExpiresByType image/svg+xml      "access plus 1 month"
+    ExpiresByType video/mp4          "access plus 1 month"
+    ExpiresByType text/css           "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
